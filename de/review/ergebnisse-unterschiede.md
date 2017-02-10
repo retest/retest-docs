@@ -16,9 +16,9 @@ Wurden alle Unterschiede in der Aktion angenommen, wird auch die Aktion grün ma
 Wurden alle Unterschiede in allen Aktionen angenommen, so wird der Test grün markiert.
 Und wurden alle Unterschiede in allen Tests angenommen, so wird die Suite grün markiert.
 
-Es besteht auch die Möglichkeit [Unterschiede dauerhaft zu ignorieren](ui-elemente-ignorieren.md).
+![GUI Screenshot vom ReView mit Unterschieden](ergebnisse-unterschiede-2.png)
 
 Um die solchermaßen bestätigten Unterschiede dauerhaft zu speicher und damit gleich die Suites zu pflegen, muss man nun noch auf "Änderungen anwenden" (8) klicken.
 Verwendet man ein [Versionskontrollsystem](../testprozess/prozess-mit-ci-server.md), so muss man in diesem die aktualisierten Suites noch kommitten.
 
-![GUI Screenshot vom ReView mit Unterschieden](ergebnisse-unterschiede-2.png)
+Es besteht auch die Möglichkeit [Unterschiede dauerhaft zu ignorieren](ui-elemente-ignorieren.md).
