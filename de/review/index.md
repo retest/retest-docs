@@ -5,7 +5,7 @@ Nachdem Sie eine Suite [abgespielt haben](../replay/suite-ausfuehren.md), öffne
 
 Falls Sie eine [CI-Server verwenden](../testprozess/prozess-mit-ci-server.md), können Sie auch Datei vom CI-Server über das Eingabefeld oben auf der Maske (2) auswählen und mit "Laden" (3) laden.
 
-![GUI Screenshot vom ReView](ergebnisse-reviewen-1.png)
+![GUI Screenshot vom ReView](index-1.png)
 
 Zunächst sehen Sie auf der linken Seite des Trenners alle abgespielten Suites aufgelistet (4), 
 sowie eine Zusammenfassung über alle Ergebnisse (5):

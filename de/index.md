@@ -23,7 +23,7 @@ Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentatio
      1. [Suite ausführen](replay/suite-ausfuehren.md)
      1. Ignorierte Komponenten
 1. ReView
-     1. [Testreport reviewen](review/ergebnisse-reviewen.md)
+     1. [Testreport reviewen](review/index.md)
 1. Surili
      1. UI-Elemente ausschließen
      1. Auf UI-Elemente begrenzen

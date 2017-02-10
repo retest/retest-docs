@@ -8,7 +8,7 @@ Trotzdem gibt es dann immernoch volatile Elemente, wie das Tagesdatum oder die B
 Obwohl dies je nach Anwendung natürlich variiert, so sollte sich die Anzahl dieser Elemente unserer Erfahrung nach jedoch in Grenzen halten.
 
 Um ein Element dauerhaft zu ignorieren kann man es direkt [in der Anwendung markieren](../replay/komponenten-ignorieren.md), 
-oder es im Nachgang beim [Reviewen der Ergebnisse](ergebnisse-reviewen.md) markieren.
+oder es im Nachgang beim [Reviewen der Ergebnisse](index.md) markieren.
 
 ![GUI Screenshot UI Elemente ignorieren](ui-elemente-ignorieren-1.png)
 

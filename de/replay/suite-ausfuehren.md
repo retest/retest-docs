@@ -11,4 +11,4 @@ Danach wird die Suite abgespielt und der Fortschritt im Log-Bereich dokumentiert
 
 ![GUI screenshot Suite ausführen](suite-ausfuehren-1.png)
 
-Nachdem die Suite abgespielt wurde öffnet sich automatisch die Maske zum [reviewen der Testergebnisse](../review/ergebnisse-reviewen.md). 
+Nachdem die Suite abgespielt wurde öffnet sich automatisch die Maske zum [reviewen der Testergebnisse](../review/index.md). 
