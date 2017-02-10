@@ -1,7 +1,7 @@
 Test zusammenstellen
 ====================
 
-Sie können einen Test aus einer oder mehreren [aufgezeichneten Aktionsfolgen](aktionsfolge-aufzeichnen.html) zusammenstellen.
+Sie können einen Test aus einer oder mehreren [aufgezeichneten Aktionsfolgen](aktionsfolge-aufzeichnen.md) zusammenstellen.
 
 Dazu klicken Sie im Menü auf "Test zusammenstellen".
 In der linken Spalte sehen Sie alle bereits aufgezeichneten Aktionsfolgen.
@@ -12,4 +12,4 @@ Durch Klick auf "Speichern..." können Sie den Test abspeichern bzw. mit "Neu" d
 
 ![GUI Screenshot Test Zusammenstellen](test-zusammenstellen-1.png)
 
-Nach dem Zusammenstellen eines Tests müssen Sie sie zunächst aus einem oder mehreren Tests eine [Suite zusammenstellen](suite-zusammenstellen.html). 
+Nach dem Zusammenstellen eines Tests müssen Sie sie zunächst aus einem oder mehreren Tests eine [Suite zusammenstellen](suite-zusammenstellen.md). 

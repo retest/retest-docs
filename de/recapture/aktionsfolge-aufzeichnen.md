@@ -5,9 +5,9 @@ Man kann eine vollständige, in sich abgeschlossene Aktionsfolge aufzeichnen.
 Dazu klickt man im Menü auf "Aktionsfolge aufzeichnen" und dann auf den Button "Starte Aufzeichnung".
 ![GUI Screenshot Aktionsfolge aufzeichnen](aktionsfolge-aufzeichnen-1.png) 
 
-Jetzt startet die Ihre Anwendung, die [SUT](was-ist-die-sut.html). Sie können Sie einfach ganz normal verwenden und einen kompletten Anwendungsfall aufzeichnen, bspw. einen Benutzer Anlegen, einen Import durchführen, oder ähnliches.
+Jetzt startet die Ihre Anwendung, die [SUT](was-ist-die-sut.md). Sie können Sie einfach ganz normal verwenden und einen kompletten Anwendungsfall aufzeichnen, bspw. einen Benutzer Anlegen, einen Import durchführen, oder ähnliches.
 
 Nach Abschluss der Aufzeichnung beenden Sie einfach Ihre Anwendung oder klicken auf "Stoppe Anwendung". Nun können Sie die aufgezeichneten Aktionen mit "Speichern" abspeichern.
 ![GUI Screenshot aufgezeichnete Aktionen](aktionsfolge-aufzeichnen-2.png) 
 
-Damit Sie die Aktionsfolge nun als Suite direkt ausführen können müssen Sie die Aktionsfolge noch [umwandeln](aktionsfolge-umwandeln.html).
+Damit Sie die Aktionsfolge nun als Suite direkt ausführen können müssen Sie die Aktionsfolge noch [umwandeln](aktionsfolge-umwandeln.md).
