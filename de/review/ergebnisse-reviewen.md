@@ -22,9 +22,11 @@ Durch einen Klick auf die abgespielten Suites (4) kann man sich die Detailergebn
 Diese sind in einer Baumstruktur aufgegliedert in Suites, Tests, Aktionen, und Unterschiede gruppiert nach Struktur.
 Bei Klick auf einzelne Elemente dieses Baumes werden dann rechts dazu weitere Details angezeigt.
 
-Grundsätzlich sind drei Ergebnisse eines Suite-Ausführung möglich:
+### Grundsätzlich sind drei Ergebnisse eines Suite-Ausführung möglich:
 
-* [Keine Unterschiede](ergebnisse-keine-unterschiede.md)
+1. [Keine Unterschiede](ergebnisse-keine-unterschiede.md)
+1. [Unterschiede](ergebnisse-unterschiede.md)
+1. [Fehler](ergebnisse-fehler.md)
 
 
 
