@@ -21,7 +21,7 @@ Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentatio
      1. [Suite umwandeln](recapture/suite-umwandeln.md)
 1. RePlay
      1. [Suite ausführen](replay/suite-ausfuehren.md)
-     1. [UI-Elemente Ignorieren](elemente-ignorieren.md)
+     1. [UI-Elemente Ignorieren](replay/ui-elemente-ignorieren.md)
 1. ReView
      1. [Testreport reviewen](review/index.md)
 1. Surili

@@ -14,6 +14,6 @@ oder es im Nachgang beim [Reviewen der Ergebnisse](index.md) markieren.
 
 Dazu muss man entweder in der Tabelle auf das Element klicken oder das Element in der Baumansicht auswählen.
 
-![Warning](../../icons/warning.png) Achtung: Unterschiede in ignorierten Elementen *und allen Kind-Elementen* werden dauerhaft ausgeblendet.
+![Warning](../../icons/warning.png) Achtung: Unterschiede in ignorierten UI-Elemente *und allen Kind-Elementen* werden beim Ausführen einer Suite nicht mehr überprüft!
 
 Man kann sich sich auch jederzeit [anschauen](../replay/ui-elemente-ignorieren.md), welche Elemente derzeit ignoriert werden.
