@@ -2,7 +2,7 @@ Umwandeln einer vollständigen Aktionsfolge
 ==========================================
 
 Damit Sie eine Aktionsfolge als komplette Suite ausführen können müssen Sie sie zuerst umwandeln. 
-Dazu haben Sie [mehrere Möglichkeiten](wie-man-einen-test-aufzeichnet.md). 
+Dazu haben Sie [mehrere Möglichkeiten](../howtos/wie-man-einen-test-aufzeichnet.md). 
 Eine Möglichkeit besteht darin, die Aktionsfolge direkt als Suite umzuwandeln.
 
 Dazu klickt man im Menü auf "Aktionsfolge umwandeln". 
