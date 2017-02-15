@@ -26,7 +26,7 @@ Bei Klick auf einzelne Elemente dieses Baumes werden dann rechts dazu weitere De
 
 1. [Keine Unterschiede](ergebnisse-keine-unterschiede.md)
 1. [Unterschiede](ergebnisse-unterschiede.md)
-1. [Fehler](ergebnisse-fehler.md)
+1. Fehler
 
 
 
