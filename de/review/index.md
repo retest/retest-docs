@@ -10,7 +10,7 @@ Falls Sie eine [CI-Server verwenden](../testprozess/prozess-mit-ci-server.md), k
 Zunächst sehen Sie auf der linken Seite des Trenners alle abgespielten Suites aufgelistet (4), 
 sowie eine Zusammenfassung über alle Ergebnisse (5):
 
-1. Die Version Ihrer Anwendung bei Aufzeichnung und Abspielen (soweit diese [erfasst wird](../howtos/wie-die-anwendungsversion-erfasst-wird.md)).
+1. Die Version Ihrer Anwendung bei Aufzeichnung und Abspielen (soweit diese erfasst wird).
 1. Die Gesamtanzahl der ausgeführten Suites, Tests und Aktionen.
 1. Die Gesamtdauer der Ausführung.
 1. Die Gesamtanzahl aller überprüfter UI-Elemente.
