@@ -8,7 +8,7 @@ Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentatio
      1. Wiederholbarkeit und Containerizierung
      1. [Prozess mit einem CI-Server](testprozess/prozess-mit-ci-server.md)
 1. Installation und Konfiguration von ReTest
-     1. Welche Ordner gibt es und was enthalten sie
+     1. [Welche Ordner gibt es und was enthalten sie](konfiguration/verzeichnisse.md)
      1. Wichtige Konfigurationsparameter
      1. Ausführung über Ant / Maven
      1. Integration in einen CI-Server
