@@ -8,7 +8,7 @@ Hier der Aufbau von ReTest im Überblick (noch sind nicht alle gezeigten Technol
 
 ![Aufbau ReTest](architecture.png)
 
-ReTest interagiert mit der [SUT](../was-ist-die-sut.md), so wie andere Capture&Replay-Tools auch.
+ReTest interagiert mit der [SUT](../testprozess/was-ist-die-sut.md), so wie andere Capture&Replay-Tools auch.
 Zusätzlich benötigt ReTest jedoch noch weitere Informationen. Dazu gehören:
 
 *   den kompletten zu erfassenden (UI-) Zustand

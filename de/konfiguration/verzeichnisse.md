@@ -35,7 +35,7 @@ Das Workspace-Verzeichnis kann mit dem System-Property `de.retest.workDirectory`
 System-under-test-Verzeichnis
 ---------------------------
 
-Dieser Ordner enthält alle Dateien, die benötig werden um die SUT zu starten.
+Dieser Ordner enthält alle Dateien, die benötig werden um die [SUT](../testprozess/was-ist-die-sut.md) zu starten.
 Standardmäßig (z.B. für die [Demo](https://update.retest.de/demo)) befindet sich dieses Verzeichnis neben der ReTest-Intallation unter dem Namen `system-under-test`. 
 Sollte es sich bei Ihrer Anwendung um eine WebStart-Anwendung handeln, so wird dieser Ordner erstellt und alle `jar`-Dateien werden dorthin abgespeichert.
 Name und Pfad können mit dem System-Property `de.retest.sut.applicationPath` angepasst werden.
