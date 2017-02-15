@@ -6,7 +6,7 @@ Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentatio
 1. Vorbedingungen / Testprozesse
      1. Definitionen
      1. Wiederholbarkeit und Containerizierung
-     1. [Prozess mit einem CI-Server](testprozess/prozess-mit-ci-server.md)
+     1. Prozess mit einem CI-Server
 1. Installation und Konfiguration von ReTest
      1. Welche Ordner gibt es und was enthalten sie
      1. Wichtige Konfigurationsparameter
@@ -28,8 +28,3 @@ Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentatio
      1. UI-Elemente ausschließen
      1. Auf UI-Elemente begrenzen
      1. Affen-Testen
- 
-... und die Anwendungsfall-orientierte Dokumentation
-
-1. [How-To's](howtos)
-1. [ReTest erweitern](extensions)
