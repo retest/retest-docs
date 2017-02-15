@@ -3,7 +3,7 @@ UI-Elemente dauerhaft ignorieren
 
 Man auch die Möglichkeit UI-Elemente dauerhaft zu ignorieren.
 
-Grundsätzlich sollte man versuchen eine [stabile Testumgebung](/testprozess/stabile-testumgebung.md) aufzubauen.
+Grundsätzlich sollte man versuchen eine stabile Testumgebung aufzubauen.
 Trotzdem gibt es dann immernoch volatile Elemente, wie das Tagesdatum oder die Build-Version.
 Obwohl dies je nach Anwendung natürlich variiert, so sollte sich die Anzahl dieser Elemente unserer Erfahrung nach jedoch in Grenzen halten.
 
