@@ -3,15 +3,16 @@ Dokumentation von ReTest
 
 Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentation von ReTest, ähnlich einem Handbuch:
 
-1. [Vorbedingungen / Testprozesse](testprozess/)
-     1. Definitionen
-     1. Wiederholbarkeit und Containerizierung
+1. [Definitionen, Vorbedingungen, Testprozesse](testprozess)
+     1. [Definitionen](testprozess/definitionen.md): [Testumgebung](testprozess/testumgebung.md), [SUT](testprozess/was-ist-die-sut.md), etc.
+     1. [Wiederholbarkeit und Containerizierung](testprozess/stabile-testumgebung.md)
      1. [Prozess mit einem CI-Server](testprozess/prozess-mit-ci-server.md)
 1. [Installation und Konfiguration von ReTest](konfiguration/)
      1. [Welche Ordner gibt es und was enthalten sie](konfiguration/verzeichnisse.md)
-     1. Wichtige Konfigurationsparameter
+     1. [Wichtige Konfigurationsparameter](konfiguration/konfigurationsdatei.md)
      1. Ausführung über Ant/Maven
      1. Integration in einen CI-Server
+     1. Integration in Jira / Bugtracking
 1. [ReCapture](recapture/)
      1. [Aufzeichnen einer Aktionsfolge](recapture/aktionsfolge-aufzeichnen.md)
      1. Bearbeiten einer Aktionsfolge
