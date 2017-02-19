@@ -25,7 +25,7 @@ Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentatio
      1. [UI-Elemente Ignorieren](replay/ui-elemente-ignorieren.md)
 1. [ReView](review/)
      1. [Testreport reviewen](review/index.md)
-1. Surili
+1. [Surili](surili/)
      1. UI-Elemente ausschließen
      1. Auf UI-Elemente begrenzen
-     1. Affen-Testen
+     1. [Affentesten](surili/affentesten.md)
