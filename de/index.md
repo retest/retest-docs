@@ -26,6 +26,6 @@ Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentatio
 1. [ReView](review/)
      1. [Testreport reviewen](review/index.md)
 1. [Surili](surili/)
-     1. UI-Elemente ausschließen
-     1. Auf UI-Elemente begrenzen
+     1. [Elemente ausschließen](surili/blacklisting.md)
+     1. [Auf Elemente begrenzen](surili/whitelisting.md)
      1. [Affentesten](surili/affentesten.md)
