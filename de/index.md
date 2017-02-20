@@ -10,7 +10,7 @@ Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentatio
 1. [Installation und Konfiguration von ReTest](konfiguration/)
      1. [Welche Ordner gibt es und was enthalten sie](konfiguration/verzeichnisse.md)
      1. [Wichtige Konfigurationsparameter](konfiguration/konfigurationsdatei.md)
-     1. Ausführung über Ant/Maven
+     1. Ausführung über Ant / Maven
      1. Integration in einen CI-Server
      1. Integration in Jira / Bugtracking
 1. [ReCapture](recapture/)
@@ -25,6 +25,7 @@ Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentatio
      1. [UI-Elemente Ignorieren](replay/ui-elemente-ignorieren.md)
 1. [ReView](review/)
      1. [Testreport reviewen](review/index.md)
+     1. [HTML-Report](review/example-html-report.md)
 1. [Surili](surili/)
      1. [Elemente ausschließen](surili/blacklisting.md)
      1. [Auf Elemente begrenzen](surili/whitelisting.md)
