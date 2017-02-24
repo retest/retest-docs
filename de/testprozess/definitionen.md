@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 Definitionen
 ============
 
@@ -16,3 +19,5 @@ ReTest verwendet mehrere Begriffe, die einer näheren Erläuterung bedürfen:
 * Eine Datei mit der Endung `.components` enthält eine Sammlung an UI-Elementen. Sie kann beim Affentesten zum Black- und Whitelisting verwendet werden, und beim Prüfen der Testergebnisse zum [dauerhaften Ignorieren von Elementen](../review/ui-elemente-ignorieren.md).
 
 Wo sich die jeweiligen Dateien befinden kann in der [Konfigurationsdatei](../konfiguration/konfigurationdatei.md) festgelegt werden.
+
+{% endblock primary %}

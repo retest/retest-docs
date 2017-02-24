@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 Der Aufbau von ReTest
 =====================
 
@@ -19,3 +22,5 @@ Zusätzlich benötigt ReTest jedoch noch weitere Informationen. Dazu gehören:
 *   Informationen über Code-Abdeckung und bestimmte Code-Analyse-Ergebnisse.
 
 Möglich wird die Modularität und Erweiterbarkeit durch den [`TestContext`](testcontext.md).
+
+{% endblock primary %}

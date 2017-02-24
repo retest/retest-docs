@@ -1,3 +1,6 @@
+{% extends "surili-content.tmpl" %}
+{% block primary %}
+
 Surili
 ======
 
@@ -7,3 +10,5 @@ Auf Deutsch heißt diese meerkatzenverwandte Affenart [Mützenlanguren](https://
  1. [Elemente ausschließen](blacklisting.md)
  1. [Auf Elemente begrenzen](whitelisting.md)
  1. [Affentesten](affentesten.md)
+
+{% endblock primary %}

@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 Die ReTest Konfigurationsdatei
 ==============================
 
@@ -24,3 +27,5 @@ Zusätzlich kann es nötig sein für einzelne Suiten bestimmte abweichende Syste
 Dazu kann man pro Suite einen `before`/`after`-Hook definieren. 
 Dazu setzt man den Parameter `de.retest.suite.` + suiteName + `.beforeHook` bzw. `de.retest.suite.` + suiteName + `.afterHook`.
 Damit dieser Mechanismus funktioniert darf allerdings derzeit der Name der Suite keine Leer- und Sonderzeichen enthalten.   
+
+{% endblock primary %}

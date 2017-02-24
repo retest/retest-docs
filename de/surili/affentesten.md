@@ -1,3 +1,6 @@
+{% extends "surili-content.tmpl" %}
+{% block primary %}
+
 Affentesten
 ===========
 
@@ -41,3 +44,5 @@ und die Ergebnisse des Vortages am nächsten Tag weiter verwendet werden.
 Stößt der Affe während des Testens auf einen Fehler, so wird er einen neuen Ordner mit dem Fehlertyp (bspw. `java.lang.NullPointerException`) sowie Datum und Uhrzeit als Namen
 im Verzeichnis [`crashes` im Workspace](../konfiguration/verzeichnisse.md) anlegen, und dort die zugehörige ausführbare Suite und einen HTML-Bericht ablegen, 
 in welchem der Test Schritt für Schritt inklusive Screenshots beschrieben ist. 
+
+{% endblock primary %}

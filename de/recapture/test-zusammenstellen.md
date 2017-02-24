@@ -1,3 +1,6 @@
+{% extends "recapture-content.tmpl" %}
+{% block primary %}
+
 Test zusammenstellen
 ====================
 
@@ -13,3 +16,5 @@ Durch Klick auf "Speichern..." können Sie den Test abspeichern bzw. mit "Neu" d
 ![GUI Screenshot Test Zusammenstellen](test-zusammenstellen-1.png)
 
 Nach dem Zusammenstellen eines Tests müssen Sie sie zunächst aus einem oder mehreren Tests eine [Suite zusammenstellen](suite-zusammenstellen.md). 
+
+{% endblock primary %}

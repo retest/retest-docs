@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 UI-Elemente ignorieren
 ======================
 
@@ -24,3 +27,5 @@ und dann mit einem Klick auf "Markiere UI-Element" in den Markierungsmodus wechs
 In diesem Modus werden derzeit ignorierte UI-Elemente grau markiert.
 Zusätzlich kann durch einen Klick auf ein UI-Element dieses ebenfalls markiert und in der Tabelle hinzugefügt werden.
 Alle Änderungen durch Hinzufügen oder Entfernen ignorierter UI-Elemente muss mit einem Klick auf "Speichern" (7) bestätigt werden.
+
+{% endblock primary %}

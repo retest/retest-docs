@@ -1,3 +1,6 @@
+{% extends "recapture-content.tmpl" %}
+{% block primary %}
+
 Suite umwandeln
 ===============
 
@@ -12,3 +15,5 @@ Statt dessen wird der gesammte Zustand der GUI erfasst und kann beim nächsten A
 ![GUI Screenshot Suite umwandeln](suite-umwandeln-1.png)
 
 Als nächstes können Sie die umgewandelte Suite [abspielen](../replay/suite-ausfuehren.md).
+
+{% endblock primary %}

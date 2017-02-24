@@ -1,3 +1,6 @@
+{% extends "surili-content.tmpl" %}
+{% block primary %}
+
 Black- und Whitelisting
 -----------------------
 
@@ -10,3 +13,5 @@ Man kann beide Möglichkeiten miteinander kombinieren.
 Nutzt man Whitelisting, so muss man jeden einzelnen Dialog den der Affe bedienen darf zur Begrenzungsliste hinzufügen!
 
 Die nächste Maske erlaubt das einstellen weiterer [Affenparameter](affentesten-parameter.md).
+
+{% endblock primary %}

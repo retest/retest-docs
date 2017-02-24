@@ -1,3 +1,6 @@
+{% extends "recapture-content.tmpl" %}
+{% block primary %}
+
 Suite zusammenstellen
 =====================
 
@@ -13,3 +16,5 @@ Durch Klick auf "Speichern..." können Sie die Suite abspeichern bzw. mit "Neu" 
 ![GUI Screenshot Suite Zusammenstellen](suite-zusammenstellen-1.png)
 
 Nach dem Zusammenstellen einer Suite müssen Sie sie zunächst [umwandeln](suite-umwandeln.md). 
+
+{% endblock primary %}

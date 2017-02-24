@@ -1,3 +1,6 @@
+{% extends "surili-content.tmpl" %}
+{% block primary %}
+
 Den Affen konfigurieren
 =======================
 
@@ -21,3 +24,5 @@ Auf der dritten Maske des Wizard kann die wichtigsten Konfigurationparameter des
 * **Anzahl Tests pro Suite automatisch anpassen:** Hier versucht unser Algorithmus heuristisch die Anzahl der Tests pro Suite auf die Anzahl der Interaktionselemente anzupassen.
 
 Mit einem Klick auf "Weiter" kommt man zur letzten Maske -- zum Starten des [Affentesten](affentesten.md).
+
+{% endblock primary %}

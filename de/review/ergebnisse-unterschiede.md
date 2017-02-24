@@ -1,3 +1,6 @@
+{% extends "review-content.tmpl" %}
+{% block primary %}
+
 Unterschiede
 ============
 
@@ -22,3 +25,5 @@ Um die solchermaßen bestätigten Unterschiede dauerhaft zu speicher und damit g
 Verwendet man ein [Versionskontrollsystem](../testprozess/prozess-mit-ci-server.md), so muss man in diesem die aktualisierten Suites noch kommitten.
 
 Es besteht auch die Möglichkeit [Unterschiede dauerhaft zu ignorieren](ui-elemente-ignorieren.md).
+
+{% endblock primary %}

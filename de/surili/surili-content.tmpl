@@ -1,0 +1,55 @@
+{% extends "page.tmpl" %}
+
+{% block title %}ReTest - Java GUI Testing{% endblock title %}
+
+{% block content %}
+
+<!-- Content
+================================================== -->
+<div class="content-outer">
+
+	<div id="page-content" class="row page">
+
+		<div id="primary" class="eight columns">
+
+			<section>
+				{% block primary %}
+				{% endblock primary %}
+			</section>
+			<!-- section end -->
+
+		</div>
+
+		<div id="secondary" class="four columns end">
+			<aside id="sidebar">
+				{% include 'search-widget.tmpl' %}
+				
+				<div class="widget">
+					<h5><a href="{{ root_url }}docs/de/">Doku Inhalt</a></h5>
+					<ul>
+						<li><a href="{{ root_url }}docs/de/testprozess">Definitionen, Vorbedingungen, Testprozesse</a></li>
+						<li><a href="{{ root_url }}docs/de/konfiguration">Installation und Konfiguration</a></li>
+						<li><a href="{{ root_url }}docs/de/recapture">ReCapture</a></li>
+						<li><a href="{{ root_url }}docs/de/replay">RePlay</a></li>
+						<li><a href="{{ root_url }}docs/de/review">ReView</a></li>
+						<li>
+							<a href="{{ root_url }}docs/de/surili">Surili</a>
+							<ul>
+								<li><a href="{{ root_url }}docs/de/surili/blacklisting.html">Blacklisting</a></li>
+								<li><a href="{{ root_url }}docs/de/surili/whitelisting.html">Whitelisting</a></li>
+								<li><a href="{{ root_url }}docs/de/surili/affentesten.html">Affentesten</a></li>
+								<li><a href="{{ root_url }}docs/de/surili/affentesten-trainieren.html">Surili Trainieren</a></li>
+								<li><a href="{{ root_url }}docs/de/surili/affentesten-listing.html">Surili Black/Whitelisting</a></li>
+								<li><a href="{{ root_url }}docs/de/surili/affentesten-parameter.html">Surili Parameter</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+
+	</div>
+
+</div>
+<!-- Content End-->
+{% endblock content %}

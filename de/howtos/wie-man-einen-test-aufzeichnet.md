@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 Wie man einen Test aufzeichnet
 ==============================
 
@@ -5,4 +8,5 @@ In ReTest kann man nur Suites abspielen. Eine Suite kann mehrere Tests enthalten
 
 * Eine [vollständige Aktionsfolge aufzeichnen](../recapture/aktionsfolge-aufzeichnen.md) und direkt [in eine Suite umwandeln](../recapture/aktionsfolge-umwandeln.md).
 * Eine Aktionsfolge als einen Test oder Teil eines Testes aufzeichnen und mehrere Tests zu einer Suite zusammenfügen und diese umwandeln.
- 
+
+{% endblock primary %}

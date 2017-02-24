@@ -1,3 +1,6 @@
+{% extends "review-content.tmpl" %}
+{% block primary %}
+
 UI-Elemente dauerhaft ignorieren
 ================================
 
@@ -17,3 +20,5 @@ Dazu muss man entweder in der Tabelle auf das Element klicken oder das Element i
 ![Warning](../../icons/warning.png) Achtung: Unterschiede in ignorierten UI-Elemente *und allen Kind-Elementen* werden beim Ausführen einer Suite nicht mehr überprüft!
 
 Man kann sich sich auch jederzeit [anschauen](../replay/ui-elemente-ignorieren.md), welche Elemente derzeit ignoriert werden.
+
+{% endblock primary %}

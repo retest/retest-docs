@@ -1,3 +1,6 @@
+{% extends "surili-content.tmpl" %}
+{% block primary %}
+
 Auf Elemente begrenzen
 ======================
 
@@ -17,3 +20,5 @@ Diese Maske funktioniert prinzipiell genau wie die Maske ["Elemente ignorieren"]
 ![SUT mit markiertem Knopf](whitelisting-1.png)
 
 Der einzige Unterschied besteht darin, dass die Elemente grün markiert werden.
+
+{% endblock primary %}

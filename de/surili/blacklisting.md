@@ -1,3 +1,6 @@
+{% extends "surili-content.tmpl" %}
+{% block primary %}
+
 Ausschließen von Elementen
 ==========================
 
@@ -14,3 +17,5 @@ Diese Maske funktioniert prinzipiell genau wie die Maske ["Elemente ignorieren"]
 ![SUT mit markiertem Knopf](blacklisting-1.png)
 
 Der einzige Unterschied besteht darin, dass die Elemente rot markiert werden.
+
+{% endblock primary %}

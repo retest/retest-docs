@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 Die stabile Testumgebung
 ========================
 
@@ -53,3 +56,4 @@ Falls Sie eine solche Lösung anstreben, aber nicht wissen wie Sie sie umsetzen 
 Wie empfehlen die Testumgebung so häufig wie möglich zurückzusetzen -- am Besten vor dem Aufzeichnen bzw. Umwandeln jeder einzelnen Suite.
 Um das Zurücksetzen der SUT zu Automatisieren empfehlen wir sogenannte "[Hooks](../konfiguration/konfigurationsdatei.md)".
 
+{% endblock primary %}

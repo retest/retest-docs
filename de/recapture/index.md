@@ -1,3 +1,6 @@
+{% extends "recapture-content.tmpl" %}
+{% block primary %}
+
 Das ReCapture Modul
 ===================
 
@@ -7,3 +10,5 @@ Das ReCapture Modul
  1. [Test zusammenstellen](test-zusammenstellen.md)
  1. [Suite zusammenstellen](suite-zusammenstellen.md)
  1. [Suite umwandeln](suite-umwandeln.md)
+
+{% endblock primary %}

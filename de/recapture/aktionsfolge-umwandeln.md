@@ -1,3 +1,6 @@
+{% extends "recapture-content.tmpl" %}
+{% block primary %}
+
 Umwandeln einer vollständigen Aktionsfolge
 ==========================================
 
@@ -15,3 +18,5 @@ Statt dessen wird der gesammte Zustand der GUI erfasst und kann beim nächsten A
 ![GUI Screenshot Aktionsfolge umwandeln](aktionsfolge-umwandeln-1.png) 
 
 Diese Aktionsfolge können Sie nun [ausführen](../replay/suite-ausfuehren.md).
+
+{% endblock primary %}

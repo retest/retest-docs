@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 Dateien und Verzeichnisse in ReTest
 ===================================
 
@@ -48,3 +51,4 @@ Aus diesem Verzeichnis heraus wir die SUT gestartet. Derzeit muss dies auch das 
 Standardmäßig ist dies das System-under-test-Verzeichnis. 
 Name und Pfad können mit dem System-Property `de.retest.sut.executionDirectory` angepasst werden.
 
+{% endblock primary %}

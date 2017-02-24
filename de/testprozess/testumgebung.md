@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 Die Testumgebung
 ================
 
@@ -19,3 +22,5 @@ Deshalb ist bei der Erzeugung bzw. Auswahl der Testdaten besonderen Wert darauf 
 dass die Daten in Umfang und Inhalt repräsentativ sind und insbesondere alle Speziel- bzw. Problemfälle enthalten sind.
 
 Außerdem sollte die Testumgebung [stabil](stabile-testumgebung.md) sein.
+
+{% endblock primary %}

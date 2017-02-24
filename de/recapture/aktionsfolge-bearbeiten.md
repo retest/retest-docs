@@ -1,3 +1,6 @@
+{% extends "recapture-content.tmpl" %}
+{% block primary %}
+
 Aktionsfolge bearbeiten
 =======================
 
@@ -21,3 +24,5 @@ Mit "Speichern" speichern Sie Ihre Änderungen ab.
 
 Wenn Sie eine Aktionsfolge geändert haben sollten Sie sie erneut entweder [einzeln umwandeln](aktionsfolge-umwandeln.md) 
 oder die zugehörige [Suite umwandeln](suite-umwandeln.md).
+
+{% endblock primary %}

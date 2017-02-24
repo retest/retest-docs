@@ -1,3 +1,6 @@
+{% extends "recapture-content.tmpl" %}
+{% block primary %}
+
 Aufzeichnen einer vollständigen Aktionsfolge
 ============================================
 
@@ -11,3 +14,5 @@ Nach Abschluss der Aufzeichnung beenden Sie einfach Ihre Anwendung oder klicken 
 ![GUI Screenshot aufgezeichnete Aktionen](aktionsfolge-aufzeichnen-2.png) 
 
 Damit Sie die Aktionsfolge nun als Suite direkt ausführen können müssen Sie die Aktionsfolge noch [umwandeln](aktionsfolge-umwandeln.md).
+
+{% endblock primary %}

@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 Installation und Konfiguration
 ==============================
 
@@ -6,3 +9,5 @@ Installation und Konfiguration
 1. Ausführung über Ant / Maven
 1. Integration in einen CI-Server
 1. Integration in Jira / Bugtracking
+
+{% endblock primary %}

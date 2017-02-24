@@ -1,3 +1,6 @@
+{% extends "review-content.tmpl" %}
+{% block primary %}
+
 Ergebnisse reviewen
 ===================
 
@@ -29,3 +32,5 @@ Bei Klick auf einzelne Elemente dieses Baumes werden dann rechts dazu weitere De
 1. Fehler
 
 Alternativ kann auch ein [HTML-Report](example-html-report.md) erzeugt werden, welcher dann z.B. von einem [CI-Server](../testprozess/prozess-mit-ci-server.md) aus direkt geladen werden kann.  
+
+{% endblock primary %}

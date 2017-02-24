@@ -1,3 +1,6 @@
+{% extends "surili-content.tmpl" %}
+{% block primary %}
+
 Den Affen trainieren
 ====================
 
@@ -8,3 +11,5 @@ Dies ist sinnvoll, um dem Affen z.B. das Anmelden an der SUT oder das Navigieren
 sowie um ihm den Happy Path eines Anwendungsfalles zu zeigen.
 
 Die nächste Maske erlaubt das [Black- und Whitelisting](affentesten-listing.md).
+
+{% endblock primary %}
