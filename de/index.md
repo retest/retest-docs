@@ -15,7 +15,7 @@ Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentatio
      1. Integration in Jira / Bugtracking
 1. [ReCapture](recapture/)
      1. [Aufzeichnen einer Aktionsfolge](recapture/aktionsfolge-aufzeichnen.md)
-     1. Bearbeiten einer Aktionsfolge
+     1. [Bearbeiten einer Aktionsfolge](recapture/aktionsfolge-bearbeiten.md)
      1. [Umwandeln einer Aktionsfolge](recapture/aktionsfolge-umwandeln.md)
      1. [Test zusammenstellen](recapture/test-zusammenstellen.md)
      1. [Suite zusammenstellen](recapture/suite-zusammenstellen.md)
