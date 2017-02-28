@@ -1,4 +1,4 @@
-{% extends "de_docs-content.tmpl" %}
+{% extends "testprozess-content.tmpl" %}
 {% block primary %}
 
 Was ist die SUT
