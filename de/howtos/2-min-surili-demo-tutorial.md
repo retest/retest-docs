@@ -1,5 +1,5 @@
-Die 2-Minuten Surili-Tour mit der ReTest Demo
-=============================================
+Das 2-Minuten Surili-Tutorial mit der ReTest Demo
+=================================================
 
 Mit ReTest brauchen Sie die Tests nicht Mal selbst aufzuzeichnen! Nutzen Sie zum Erzeugen der Tests einfach unseren digitalen Affen – Surili.
 
