@@ -1,5 +1,5 @@
-Die 2-Minuten Difference-Testing-Tour mit der ReTest Demo
-=========================================================
+Das 2-Minuten Difference-Testing-Tutorial mit der ReTest Demo
+=============================================================
 
 Wenn Sie die ReTest-Demo herunter geladen haben, dann haben Sie eine zip-Datei vorliegen.
 Nach dem entzippen finden Sie drei Ordner:
