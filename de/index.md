@@ -1,7 +1,17 @@
 Dokumentation von ReTest
 ========================
 
-Hier finden Sie zum schnelle [Schritt für Schritt Anleitungen](howtos/) aber auch eine detailierte Nutzer-Dokumentation.
+Schnelleinstieg
+---------------
+
+Zum Schnelleinstieg finden Sie hier kurze [Schritt für Schritt Anleitungen](howtos/):
+
+1. [2 Minuten Difference-Testing Tutorial mit der Demo SUT](2-min-diff-testing-demo-tutorial.md)
+1. [2 Minuten Surili Tutorial mit der Demo SUT](2-min-surili-demo-tutorial.md)
+1. [Wie man ReTest für eine SUT konfiguriert](wie-man-retest-konfiguriert.md)
+
+Ausführliche Nutzerdokumentation
+--------------------------------
 
 Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentation von ReTest, ähnlich einem Handbuch:
 
