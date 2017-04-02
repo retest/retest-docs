@@ -65,6 +65,9 @@ With the given parameters, Surili should be done with testing already after a sh
 Because the operation is random based, your results may differ from those shown here ...
 But they should at least be similar.
 
+![Warning](../../icons/warning.png) Note: If the monkey seems unable to login, 
+please run the suite you used for training and make sure it does not show any differences!
+
 ![ReTest View 'Start Monkey Testing'](2-min-surili-demo-tutorial-7.png)
 
 If you click again on "Run Suite", you will now see an additional suite,

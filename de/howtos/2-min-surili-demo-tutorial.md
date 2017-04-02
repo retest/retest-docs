@@ -61,6 +61,9 @@ Mit den eingestellten Parametern sollte Surili bereits nach kurzer Zeit mit Test
 Da der Vorgang zufallsbasiert ist, kann es sein, dass Ihre Ergebnisse von den hier gezeigten abweichen ...
 sie sollten jedoch zumindest ähnlich sein.
 
+![Warning](../../icons/warning.png) Achtung: Wenn der Affe sich nicht einloggen kann, 
+dann stellen Sie sicher, dass die Suite, die Sie zum Trainieren benutzt haben aus, keine Unterschiede erzeugt, wenn Sie sie ausführen.  
+
 ![ReTest Ansicht 'Affentesten starten'](2-min-surili-demo-tutorial-7.png)
 
 Wenn Sie jetzt wieder auf "Suite ausführen" klicken, so sehen Sie dort nun eine zusätzliche Suite, 
