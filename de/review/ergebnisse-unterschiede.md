@@ -23,10 +23,16 @@ allen Tests angenommen, so wird die Suite grün markiert.
 
 ![GUI-Screenshot von ReView mit Unterschieden](ergebnisse-unterschiede-2.png)
 
-Um die solchermaßen bestätigten Unterschiede dauerhaft zu speicher und damit gleich die Suites zu pflegen, muss man nun
-noch auf "Änderungen anwenden" (8) klicken. Verwendet man ein
-[Versionskontrollsystem](../testprozess/prozess-mit-ci-server.md), so muss man in diesem die aktualisierten Suites noch
-kommitten.
+Um die so bestätigten Unterschiede dauerhaft zu speichern und damit gleich die Suites zu pflegen, muss man nun noch auf
+"Änderungen anwenden" (8) klicken. Dabei gilt es Folgendes zu beachten: Derzeit werden akzeptierte Änderungen nur in den
+betroffenen ausführbaren Suites manifestiert. Nutzt man beispielsweise ein `result.replay` für diverse Änderungen,
+schließt dieses und öffnet es im Anschluss nochmal, so scheinen die zuvor getätigten Änderungen verschwunden. Die
+Änderungen sind zwar nicht sichtbar, jedoch aber vorhanden. Um ungültiges Bearbeiten hierbei zu verhindern, besitzen
+ausführbare Suites eine spezielle [UUID](https://de.wikipedia.org/wiki/Universally_Unique_Identifier), die sich beim
+Speichern verändert. Sie sollten daher Änderungen anwenden" nur einmal, nämlich am Ende des Bearbeitens, klicken.
+
+Verwendet man ein [Versionskontrollsystem](../testprozess/prozess-mit-ci-server.md), so muss man in diesem die
+aktualisierten Suites abschließend noch committen.
 
 Es besteht auch die Möglichkeit [Unterschiede dauerhaft zu ignorieren](ui-elemente-ignorieren.md).
 
