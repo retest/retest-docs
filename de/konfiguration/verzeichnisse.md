@@ -28,7 +28,7 @@ Dieser Ordner enthält alle veränderlichen Dateien einer ReTest-Installation, w
 [Konfigurationsdatei](konfigurationsdatei.md), die [Lizenzdatei](lizenz.md) und weitere operationale Dateien.
 
 Standardmäßig befindet sich das Verzeichnis `retest-workspace` auf der gleichen Ebene wie das
-ReTest-Installationsverzeichnis. Wenn die System Property `de.retest.configFile` gesetzt ist, dann wird standardmäßig
+ReTest-Installationsverzeichnis. Wenn die System-Property `de.retest.configFile` gesetzt ist, dann wird standardmäßig
 der Elternordner dieser Datei als Workspace genutzt. Der ReTest-Workspace kann mit der System-Property
 `de.retest.workDirectory` und einer absoluten Pfadangabe gesetzt werden.
 
