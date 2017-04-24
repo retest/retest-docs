@@ -10,12 +10,12 @@ After unzipping you will find three folders:
 
 Open the folder `retest` and, depending on the operating system, doubleclick the file `retest-gui.bat` (Windows) or `retest-gui.sh` (Linux / Mac).
 Then ReTest should start and the start screen should open.
-If you encounter any problems, please contact [feedback.retest.de](http://feedback.retest.de) or send an e-mail to [support@retest.de](mailto:support@retest.de).
+If you encounter any problems, please contact http://feedback.retest.de/ or send an e-mail to [support@retest.de](mailto:support@retest.de).
 
 ![ReTest start screen](2-min-diff-testing-demo-tutorial-1.png)
 
 As you can see, the menu is on the left. It can be displayed and hidden by clicking on the ReTest logo.
-To the bottom of the menu you will find a link to our [support](http://feedback.retest.de).
+To the bottom of the menu you will find a link to our [support](http://feedback.retest.de/).
 In the right section you will see a small explanation, which changes depending on the menu point currently open and gives help and tips.
 These explanations can be displayed and hidden in the menu of the `...` button in the upper right corner by clicking on 'Show description'.
 

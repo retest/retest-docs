@@ -9,7 +9,7 @@ ReTest-Installationsverzeichnis
 -------------------------------
 
 Dieser Ordner sollte eine *unberührte* ReTest-Installation beinhalten, genau so wie sie durch das Entpacken der
-ReTest-Datei von https://updates.retest.de/ entsteht.
+ReTest-Datei von https://update.retest.de/ entsteht.
 
 Beim Starten versucht ReTest diesen Ordner zu finden. Wenn das start-Skript (`retest-gui.bat` (Windows) oder
 `retest-gui.sh` (Linux/Mac)) aus dem ReTest-Installationsverzeichnis heraus kopiert wurde, muss der Pfad zu diesem
@@ -36,7 +36,7 @@ SUT-Verzeichnis
 ---------------
 
 Dieser Ordner enthält alle Dateien die benötig werden, um die [SUT](../testprozess/was-ist-die-sut.md) zu starten.
-Standardmäßig (z. B. für die [Demo](https://update.retest.de/demo)) befindet sich dieses Verzeichnis neben dem
+Standardmäßig (z. B. für die [Demo](https://update.retest.de/demo/) befindet sich dieses Verzeichnis neben dem
 ReTest-Installationsverzeichnis unter dem Namen `system-under-test`. Sollte es sich bei Ihrer Anwendung um eine
 Web-Start-Anwendung handeln, so wird dieser Ordner erstellt und alle JAR-Dateien werden dorthin abgespeichert. Name und
 Pfad können mit der System-Property `de.retest.sut.applicationPath` angepasst werden.
