@@ -12,7 +12,7 @@ Dazu klickt man im Menü auf "Aktionsfolge umwandeln".
 Dann suchen Sie in der Liste der Aktionsfolgen diejenige heraus, die Sie umwandeln möchten.
 Dann klicken Sie auf den Button "Aktionsfolge umwandeln". 
 Nun wird die komplette Aktionsfolge nochmals abgespielt und mit den Zustandsinformationen von der GUI (alle angezeigten Werte und mehr) angereichert.
-Der spezielle Ansatz von ReTest, genannt [Difference Testing](https://www.retest.de/product/difference-testing.md) erspart es Ihnen mühsam einzelne Prüfregeln zu definieren.
+Der spezielle Ansatz von ReTest, genannt [Difference Testing](https://retest.de/product/difference-testing.md) erspart es Ihnen mühsam einzelne Prüfregeln zu definieren.
 Statt dessen wird der gesammte Zustand der GUI erfasst und kann beim nächsten Abspielen überprüft werden.
   
 ![GUI Screenshot Aktionsfolge umwandeln](aktionsfolge-umwandeln-1.png) 

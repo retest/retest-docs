@@ -51,7 +51,7 @@ und Containerizierung mit [Docker](https://www.docker.com), [Vagrant](https://ww
 Ebenso stellt dies (je nach Szenario) üblicherweise auch kein Performance-Problem mehr dar, 
 da im schlimmsten Fall mit Werkzeugen wir [Ansible](https://www.ansible.com), [Chef](https://www.chef.io/), [Saltstack](https://saltstack.com/) und [Puppet](https://puppet.com) eine relativ einfache Verteilung und Parallelisierung in der Cloud möglich ist.
 
-Falls Sie eine solche Lösung anstreben, aber nicht wissen wie Sie sie umsetzen sollen, [sprechen Sie uns an](https://www.retest.de/kontakt.html).
+Falls Sie eine solche Lösung anstreben, aber nicht wissen wie Sie sie umsetzen sollen, [sprechen Sie uns an](https://retest.de/kontakt.html).
 
 Wie empfehlen die Testumgebung so häufig wie möglich zurückzusetzen -- am Besten vor dem Aufzeichnen bzw. Umwandeln jeder einzelnen Suite.
 Um das Zurücksetzen der SUT zu Automatisieren empfehlen wir sogenannte "[Hooks](../konfiguration/konfigurationsdatei.md)".

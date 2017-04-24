@@ -10,7 +10,7 @@ Nach dem entzippen finden Sie drei Ordner:
 
 Öffnen Sie den Ordner `retest` und klicken Sie je nach Betriebssystem auf die Datei `retest-gui.bat` (Windows) oder `retest-gui.sh` (Linux / Mac).
 Dann sollte sich der ReTest Startbildschirm öffnen. 
-Sollten Sie bis hierher Probleme haben, so melden Sie sich bitte unter [feedback.retest.de](http://feedback.retest.de) oder per E-Mail unter [support@retest.de](mailto:support@retest.de). 
+Sollten Sie bis hierher Probleme haben, so melden Sie sich bitte unter http://feedback.retest.de/ oder per E-Mail unter [support@retest.de](mailto:support@retest.de). 
 
 ![ReTest Startbildschirm](2-min-diff-testing-demo-tutorial-1.png)
 
