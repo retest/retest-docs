@@ -12,6 +12,8 @@ Deshalb benötigt man also eine [Testumgebung](https://de.wikipedia.org/wiki/Tes
 
 > Eine Testumgebung (Englisch 'Test Environment') ist die technisch-organisatorische Infrastruktur, die zum Testen von Software benutzt wird.
 
+[aus Wikipedia](https://de.wikipedia.org/wiki/Testumgebung)
+
 Aus oben genannten Gründen sollte die Testumgebung von der Produktivumgebung getrennt sein.
 Gleichzeitig sollte die Testumgebung der Produktivumgebung so ähnlich wie möglich sein, 
 weil jede Abweichung der beiden Umgebungen Probleme in der Software während der Durchführung der Tests in der Testumgebung "maskieren" kann, 
