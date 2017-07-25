@@ -15,6 +15,9 @@ Durch Klick auf "Speichern..." können Sie den Test abspeichern bzw. mit "Neu" d
 
 ![GUI Screenshot Test Zusammenstellen](test-zusammenstellen-1.png)
 
+![Warning](../../icons/warning.png) **Achtung:** ReTest speichert lediglich den relativen Pfad zur Aktionsfolge. 
+Wenn Sie Aktionsfolgen auf Dateiebene nach dem Zusammenstellen des Tests verschieben, schlägt das Umwandeln fehl.
+
 Nach dem Zusammenstellen eines Tests müssen Sie sie zunächst aus einem oder mehreren Tests eine [Suite zusammenstellen](suite-zusammenstellen.md). 
 
 {% endblock primary %}
