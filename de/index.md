@@ -22,7 +22,7 @@ Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentatio
 1. [Installation und Konfiguration von ReTest](konfiguration/)
      1. [Welche Ordner gibt es und was enthalten sie](konfiguration/verzeichnisse.md)
      1. [Wichtige Konfigurationsparameter](konfiguration/konfigurationsdatei.md)
-     1. Ausführung über Ant/Maven
+     1. [Integration in ein Build-System (bspw. Ant/Maven)](konfiguration/build-system.md)
      1. [Integration in einen CI-Server](konfiguration/ci.md)
      1. Integration in Jira/Bugtracking
 1. [ReCapture](recapture/)
