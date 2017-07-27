@@ -14,7 +14,7 @@ Dazu gibt es derzeit 3 Möglichkeiten:
 
 Durch die Möglichkeit der Ausführung über die Kommandozeile sollten Integrationen in weitere Build-Systeme problemlos möglich sein.
 Falls Sie hierbei Unterstützung benötigen, so sprechen Sie uns gerne an.
-Falls Sie eine Integration durchgeführt haben, so lassen Sie es uns wissen, dann können wir dies hier dokumentieren.
+Falls Sie eine Integration durchgeführt haben, so lassen Sie es uns wissen, damit wir dies hier dokumentieren können.
 
 Bei allen drei Schnittstellen stehen Ihnen folgende Befehle zur Verfügung:
 
@@ -29,7 +29,7 @@ Bei allen drei Schnittstellen stehen Ihnen folgende Befehle zur Verfügung:
 Die Ausführung über die Kommandozeile funktioniert mittels einem installierten Java, bspw. aus dem Verzeichnis Ihrer Anwendung:
 
 ```
-java -Dde.retest.workDirectory=<Pfad zum retest-workspace> -Dde.retest.Dir=<Pfad-zu-ReTest> -Xmx512M -noverify -server -ea -esa -XX:+UseParallelGC -cp <classpath> <ReTest-Main-Klasse> execsuites/Meine_Suite.execsuite
+java -Dde.retest.workDirectory=<Pfad zum retest-workspace> -Dde.retest.Dir=<Pfad-zu-ReTest> -Xmx512M -noverify -server -XX:+UseParallelGC -cp <Pfad-zu-ReTest>/retest.jar <ReTest-Main-Klasse> execsuites/Meine_Suite.execsuite
 ```
 
 Bei der Ausführung über die Kommandozeile benutzen Sie bitte entsprechend die folgenden Klassen beim Aufruf:
@@ -52,5 +52,9 @@ Ein vorgefertigtes und funktionierendes Beispiel hierzu wird in der [ReTest-Demo
 Es sollte relativ einfach sein, dieses Beispiel auf Ihre Zwecke zu adaptieren.
 
 Die Tasks zum Konvertieren, Abspielen und Migrieren können mit [Ant-FileSets](https://ant.apache.org/manual/Types/fileset.html) sehr flexibel konfiguriert werden.
+
+## Ausführung über Maven
+
+*TODO*
 
 {% endblock primary %}
