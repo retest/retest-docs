@@ -34,22 +34,19 @@ java -Dde.retest.workDirectory=<Pfad zum retest-workspace> -Dde.retest.Dir=<Pfad
 
 Bei der Ausführung über die Kommandozeile benutzen Sie bitte entsprechend die folgenden Klassen beim Aufruf:
 
-1. `de.retest.TestConvert` zum Konvertieren von Suites. 
-   Als Argument liefern Sie hier bitte einfach die zu konvertierenden Suites.
-2. `de.retest.TestGenerator` zum Generieren von Tests und Monkey-Testen Ihrer Anwendung.
-3. `de.retest.TestReplayer` zum Abspielen von Suites. 
-   Als Argument liefern Sie hier einfach die Suites die abgespielt werden sollen, durch Komma getrennt.
-   Geben Sie kein Argument an, so werden _alle_ Suites abgespielt.
+1. `de.retest.TestConvert` zum Konvertieren von Suites.
+2. `de.retest.TestGenerator` zum Generieren von Tests und zum Monkey Testing.
+3. `de.retest.TestReplayer` zum Abspielen von Suites.
 4. `de.retest.UpdateReTest` zum Aktualisieren von ReTest.
-5. `de.retest.TestMigrator` zum Migrieren von ReTest-Dateien nach einem Update. 
-   Als Argument liefern Sie hier bitte einfach die Suites die abgespielt werden sollen. 
-   Geben Sie kein Argument an, so werden _alle_ Dateien migriert.
+5. `de.retest.TestMigrator` zum Migrieren von ReTest-Dateien nach einem Update.
+
+In den Fällen 1, 2 und 3 wird als Argument eine Liste Suites (1) bzw. ExecSuites (2 und 3), getrennt durch Semikolon, erwartet. Wird kein Argument übergeben, so werden alle Suites bzw. ExecSuites verwendet. Zur Migration können beliebige Dateien (Actions, Tests und ExecSuites), ebenfalls getrennt durch Semikolon, übergeben werden. Wird hierbei kein Argument mitgeliefert, dann werden alle Actions, Tests und ExecSuites migriert. Im Falle eines Updates (5) ist kein Argument notwendig.
 
 ## Ausführung über Ant
 
 ReTest kann ebenfalls via Ant ausgeführt werden. 
 Hierfür stehen für die o. g. Aufgaben (Aufnehmen, Abspielen, Generieren etc.) vorgefertigte Tasks zur Verfügung. 
-Ein entsprechendes vorgefertigtes und funktionierendes Beispiel findet sich in der ReTest-Demo (https://update.retest.de/demo) in der `build.xml` (im ReTest-Workspace), welche Sie für Ihre eigenen Zwecke adaptieren können.
+Ein entsprechendes funktionierendes Beispiel findet sich in der ReTest-Demo (https://update.retest.de/demo) in der `build.xml` (im ReTest-Workspace), welche Sie für Ihre eigenen Zwecke adaptieren können.
 
 Die Tasks zum Konvertieren, Abspielen und Generieren können mit [Ant-FileSets](https://ant.apache.org/manual/Types/fileset.html) sehr flexibel konfiguriert werden.
 
