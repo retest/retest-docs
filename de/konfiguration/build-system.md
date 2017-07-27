@@ -4,17 +4,17 @@
 Integration in ein Build-System
 ===============================
 
-Z.B. bei der [Integration in einen CI-Server](ci.md) sollte ReTest nicht über die GUI ausgeführt werden.
-Generell ist es sinnvoll ReTest dauerhaft in Ihr Build-System zu integrieren. 
-Dazu gibt es derzeit 3 Möglichkeiten:
+Wird ReTest bspw. in ein Build-System integriert, so sollte die Ausführung nicht über die GUI erfolgen.
+Generell ist es sinnvoll, ReTest dauerhaft in Ihr Build-System zu integrieren. 
+Dazu gibt es derzeit drei Möglichkeiten:
 
 1. Ausführung direkt über die [Kommandozeile](https://de.wikipedia.org/wiki/Kommandozeile).
 2. Ausführung über [Ant](http://ant.apache.org).
 3. Ausführung über [Maven](https://maven.apache.org).
 
-Durch die Möglichkeit der Ausführung über die Kommandozeile sollten Integrationen in weitere Build-Systeme problemlos möglich sein.
+Durch die Möglichkeit der Ausführung über die Kommandozeile, ist die Integration in gängige Build-Systeme problemlos möglich.
 Falls Sie hierbei Unterstützung benötigen, so sprechen Sie uns gerne an.
-Falls Sie eine Integration durchgeführt haben, so lassen Sie es uns wissen, damit wir dies hier dokumentieren können.
+Haben Sie eine Integration durchgeführt, so lassen Sie es uns wissen, damit wir dies hier dokumentieren können.
 
 Bei allen drei Schnittstellen stehen Ihnen folgende Befehle zur Verfügung:
 
@@ -22,11 +22,11 @@ Bei allen drei Schnittstellen stehen Ihnen folgende Befehle zur Verfügung:
 2. Generieren von Suites
 3. Abspielen von Suites
 4. Automatisches Updaten von ReTest 
-5. Migrieren von Dateien nach einem ReTest Update
+5. Migrieren von Dateien nach einem ReTest-Update
 
 ## Ausführung über die Kommandozeile
 
-Die Ausführung über die Kommandozeile funktioniert mittels einem installierten Java, bspw. aus dem Verzeichnis Ihrer Anwendung:
+Die Ausführung über die Kommandozeile erfolgt über den `java`-Befehl, bspw. aus aus dem Verzeichnis Ihrer Anwendung:
 
 ```
 java -Dde.retest.workDirectory=<Pfad zum retest-workspace> -Dde.retest.Dir=<Pfad-zu-ReTest> -Xmx512M -noverify -server -XX:+UseParallelGC -cp <Pfad-zu-ReTest>/retest.jar <ReTest-Main-Klasse> execsuites/Meine_Suite.execsuite
@@ -38,7 +38,7 @@ Bei der Ausführung über die Kommandozeile benutzen Sie bitte entsprechend die 
    Als Argument liefern Sie hier bitte einfach die zu konvertierenden Suites.
 2. `de.retest.TestGenerator` zum Generieren von Tests und Monkey-Testen Ihrer Anwendung.
 3. `de.retest.TestReplayer` zum Abspielen von Suites. 
-   Als Argument liefern Sie hier bitte einfach die Suites die abgespielt werden sollen.
+   Als Argument liefern Sie hier einfach die Suites die abgespielt werden sollen, durch Komma getrennt.
    Geben Sie kein Argument an, so werden _alle_ Suites abgespielt.
 4. `de.retest.UpdateReTest` zum Aktualisieren von ReTest.
 5. `de.retest.TestMigrator` zum Migrieren von ReTest-Dateien nach einem Update. 
@@ -47,11 +47,11 @@ Bei der Ausführung über die Kommandozeile benutzen Sie bitte entsprechend die 
 
 ## Ausführung über Ant
 
-ReTest kann über eigene Tasks in eine `build.xml` in Ant integriert werden.
-Ein vorgefertigtes und funktionierendes Beispiel hierzu wird in der [ReTest-Demo](https://update.retest.de/demo) mitgeliefert (in `retest-workspace/build.xml`).
-Es sollte relativ einfach sein, dieses Beispiel auf Ihre Zwecke zu adaptieren.
+ReTest kann ebenfalls via Ant ausgeführt werden. 
+Hierfür stehen für die o. g. Aufgaben (Aufnehmen, Abspielen, Generieren etc.) vorgefertigte Tasks zur Verfügung. 
+Ein entsprechendes vorgefertigtes und funktionierendes Beispiel findet sich in der ReTest-Demo (https://update.retest.de/demo) in der `build.xml` (im ReTest-Workspace), welche Sie für Ihre eigenen Zwecke adaptieren können.
 
-Die Tasks zum Konvertieren, Abspielen und Migrieren können mit [Ant-FileSets](https://ant.apache.org/manual/Types/fileset.html) sehr flexibel konfiguriert werden.
+Die Tasks zum Konvertieren, Abspielen und Generieren können mit [Ant-FileSets](https://ant.apache.org/manual/Types/fileset.html) sehr flexibel konfiguriert werden.
 
 ## Ausführung über Maven
 
