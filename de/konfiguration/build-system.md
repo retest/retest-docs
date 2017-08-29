@@ -26,13 +26,53 @@ Bei allen drei Schnittstellen stehen Ihnen folgende Befehle zur Verfügung:
 
 ## Ausführung über die Kommandozeile
 
-Die Ausführung über die Kommandozeile erfolgt über den `java`-Befehl, bspw. aus aus dem Verzeichnis Ihrer Anwendung:
+Die Ausführung über die Kommandozeile erfolgt über den `java`-Befehl. Folgendes Shell-Skript startet beispielsweise das Abspielen aller ExecSuites:
 
 ```
-java -Dde.retest.workDirectory=<Pfad zum retest-workspace> -Dde.retest.Dir=<Pfad-zu-ReTest> -Xmx512M -noverify -server -XX:+UseParallelGC -cp <Pfad-zu-ReTest>/retest.jar <ReTest-Main-Klasse> execsuites/Meine_Suite.execsuite
+# ReTest installation directory.
+retest_home="./"
+# ReTest workspace containing actions, tests, suites, and license.
+retest_workspace="$retest_home/../retest-workspace"
+# Properties file to configure ReTest.
+properties="$retest_workspace/retest.properties"
+# System under test (SUT), i.e. the application you would like to test.
+system_under_test="$retest_home/../system-under-test"
+
+cd "$system_under_test"
+
+javaArgs=" -Dde.retest.configFile=$properties -Dsun.java2d.d3d=false -Dsun.java2d.xrender=false -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=$retest_workspace -XX:-OmitStackTraceInFastThrow -Xms1g "
+javaAgent=" -javaagent:$retest_home/retest.jar "
+paths=" -Dde.retest.workDirectory=$retest_workspace -Dde.retest.Dir=$retest_home -Dlogback.configurationFile=$retest_workspace/logback.xml "
+
+mkdir -p "$retest_workspace/logs"
+
+exec java $javaArgs $javaAgent $paths -cp "$retest_home/retest.jar" de.retest.TestReplayer
 ```
 
-Bei der Ausführung über die Kommandozeile benutzen Sie bitte entsprechend die folgenden Klassen beim Aufruf:
+Bzw. auf Windows:
+
+```
+:: ReTest installation directory.
+SET "retest_home=%~dp0"
+:: ReTest workspace containing actions, tests, suites, and license.
+SET "retest_workspace=%retest_home%\..\retest-workspace"
+:: Properties file to configure ReTest.
+SET "properties=%retest_workspace%\retest.properties"
+:: System under test (SUT), i.e. the application you would like to test.
+SET "system_under_test=%retest_home%\..\system-under-test"
+
+cd %system_under_test%
+
+SET "javaArgs= -Dde.retest.configFile=%properties% -Dsun.java2d.d3d=false -Dsun.java2d.xrender=false -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=%retest_workspace% -XX:-OmitStackTraceInFastThrow -Xms1g "
+SET "javaAgent= -javaagent:%retest_home%\retest.jar "
+SET "paths= -Dde.retest.workDirectory=%retest_workspace% -Dde.retest.Dir=%retest_home% -Dlogback.configurationFile=%retest_workspace%\logback.xml "
+
+IF NOT EXIST "%retest_workspace%\logs" MKDIR %retest_workspace%\logs
+
+java %javaArgs% %javaAgent% %paths% -cp %retest_home%\retest.jar de.retest.TestReplayer
+```
+
+Bei der Ausführung über die Kommandozeile können Sie grundsätzlich folgende Klassen verwenden:
 
 1. `de.retest.TestConvert` zum Konvertieren von Suites.
 2. `de.retest.TestGenerator` zum Generieren von Tests und zum Monkey Testing.
