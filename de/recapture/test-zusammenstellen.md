@@ -4,7 +4,15 @@
 Test zusammenstellen
 ====================
 
-Sie können einen Test aus einer oder mehreren [aufgezeichneten Aktionsfolgen](aktionsfolge-aufzeichnen.md) zusammenstellen.
+Sie können einen Test aus einer oder mehreren [aufgezeichneten Aktionsfolgen](aktionsfolge-aufzeichnen.md) zusammenstellen. Ein Test stellt einen abgeschlossenen und isolierten Anwendungsfall dar. Zum Beispiel hat der Test 'Benutzerverwaltung' folgende Aktionsfolgen:
+
+* Anmelden
+* Benutzer anlegen
+* Benutzer bearbeiten 
+* Benutzer löschen
+* Abmelden
+
+Dabei darf ein Test die Anwendung jedoch *nicht mehrmals starten oder stoppen*. Dies sollte durch mehrere einzelne Tests realisiert werden.
 
 Dazu klicken Sie im Menü auf "Test zusammenstellen".
 In der linken Spalte sehen Sie alle bereits aufgezeichneten Aktionsfolgen.
