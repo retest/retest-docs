@@ -1,3 +1,6 @@
+{% extends "en_docs-content.tmpl" %}
+{% block primary %}
+
 The 2-minutes Surili tutorial with our demo application
 =======================================================
 
@@ -78,3 +81,5 @@ With the name `generated-suite-` and the current date.
 Now you can run this suite directly or start another round of Monkey Testing based on this one.
 This means you can also iteratively improve the results (for example, a few hours per night)
 and each round train the monkey with the results of the previous round.
+
+{% endblock primary %}

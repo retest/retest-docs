@@ -1,3 +1,6 @@
+{% extends "en_docs-content.tmpl" %}
+{% block primary %}
+
 The 2-minute Difference Testing tutorial with our demo application
 ==================================================================
 
@@ -94,3 +97,5 @@ just click on the "Ignore UI element" menu item.
 
 Next, you can record more complex tests and suites and interactively debug your recordings.
 Or you can complete our [2 minute Surili tutorial with the ReTest Demo](2-min-surili-demo-tutorial.md).
+
+{% endblock primary %}
