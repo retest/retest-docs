@@ -1,0 +1,42 @@
+{% extends "page_en.tmpl" %}
+
+{% block title %}ReTest - Java GUI Testing{% endblock title %}
+
+{% block content %}
+
+<!-- Content
+================================================== -->
+<div class="content-outer">
+
+	<div id="page-content" class="row page">
+
+		<div id="primary" class="eight columns">
+
+			<section>
+				{% block primary %}
+				{% endblock primary %}
+				
+				{% include 'edit-github-snippet.tmpl' %}
+			</section>
+			<!-- section end -->
+
+		</div>
+
+		<div id="secondary" class="four columns end">
+			<aside id="sidebar">
+				{% include 'search-widget.tmpl' %}
+				
+				<div class="widget">
+					<h5><a href="{{ root_url }}docs/de/">Documentation</a></h5>
+					<ol>
+						<li><a href="{{ root_url }}docs/en/howtos">2 min tutorial</a></li>
+					</ol>
+				</div>
+			</aside>
+		</div>
+
+	</div>
+
+</div>
+<!-- Content End-->
+{% endblock content %}
