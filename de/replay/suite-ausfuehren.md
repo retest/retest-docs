@@ -11,6 +11,7 @@ kann noch nicht wieder abgespielt werden.
 
 Nachdem Sie die Suite ausgewählt haben, klicken Sie auf "Suite abspielen". 
 Danach wird die Suite abgespielt und der Fortschritt im Log-Bereich dokumentiert.
+Um mehrere Suites auf einmal abzuspielen, halten Sie `Strg` gedrückt, und wählen Sie mehrere Suiten aus.
 
 ![GUI screenshot Suite ausführen](suite-ausfuehren-1.png)
 
