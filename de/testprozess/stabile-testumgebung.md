@@ -1,59 +1,58 @@
 {% extends "testprozess-content.tmpl" %}
 {% block primary %}
 
-Die stabile Testumgebung
+Stable Test Environment
 ========================
 
-Ein wichtiger Punkt in Bezug auf die Testfälle ist deren Unabhängigkeit voneinander.
-Unabhängigkeit bedeutet, dass wenn Tests bspw. in der Reihenfolge `A`, `B`, `C` ablaufen,
-dass Test `B` keine Abhängigkeiten zu `A` hat und Test `C` keine Abhängigkeiten zu `B` oder `A`.
+An important point in relation to the test cases is their independence from each other. 
+Independence means that if tests run in the order `A` `B` `C`, that test `B` has no dependencies 
+to `A` and test `C` has no dependencies to `B` or `A`.
 
-Solche Abhängigkeiten entstehen häufig unbewusst, bspw. indem in Test `B` mit Daten gearbeitet wird, 
-welche auch in Test `A` bearbeitet oder sogar erst angelegt werden. 
+Such Dependencies often develop unconsciously, e.g. by working with data in test `B`, 
+which are also processed in test `A` or even are first applied.
 
-Abhängigkeiten zwischen Tests können weitreichende negative Folgen haben.
-So können Tests nicht mehr unabhängig voneinander abgespielt werden:
+Dependencies between tests can have far-reaching negative consequences. 
+Thus, tests can no longer be played independently of each other:
 
-* Wenn Test `A` fehlschlägt schlagen automatisch auch Test `B` und `C` fehl, 
-  wodurch keine Aussage mehr getroffen werden kann, wie weitreichend ein Problem tatsächlich ist:
-  Schlagen die Tests fehl, weil ein Problem alle Tests betrifft, oder nur aufgrund (ungewollter) Abhängigkeiten?
-
-* Man kann die Testreihenfolge nicht mehr ändern. 
-  Dadurch kann man auch Tests nicht mehr beliebig provisionieren und verteilt oder parallel ausführen.
   
-* Man kann Tests nicht mehr einzeln abspielen. 
-  Wenn bspw. nur Test `C` fehlschlägt, dieser aber von `A` und `B` abhängig ist, 
-  führt dies bei der Diagnose und Behebung des Problems unter Umständen zu enormen Zeitverlusten.
+* If test `A` fails, test `B` and `C` fail automatically too, which means that no statement 
+  can be made as to how far-reaching a problem actually is: Does the test fail because a problem affects all tests, 
+  or only because of (unintended) dependencies?  
+  
+* The test order can‘ t be changed anymore. As a result, tests can no longer be randomly 
+  provisioned and distributed or parallel executed.
+  
+* You can no longer play tests individually. If, e.g. only test `C` fails 
+  but is dependent on `A` and `B`, this can lead to enormous time losses in the diagnosis and 
+  resolution of the problem.
 
-Ähnlich wie in der Programmierung selbst, entsteht außerdem eine [Kopplung](https://de.wikipedia.org/wiki/Lose_Kopplung), 
-welche sich negativ auf die Wartbarkeit der Tests auswirkt.
-Tests können also nicht mehr unabhängig voneinander geändert werden:
+
+Similar to the programming itself, there is also a coupling which adversely affects 
+the maintainability of the tests. Tests can therefore no longer be changed independently of each other: 
   
-* Wenn sich der Test `A` ändert, müssen ebenfalls die Tests `B` und `C` angepasst werden,
-  was einen erhöhten Wartungsaufwand und größere Fehlerwahrscheinlichkeit zur Folge hat.
   
-* Umgekeht muss man zum Anpassen des Tests `C` potentiell auch den Test `A` und `B` verstehen oder kennen,
-  um die Herkunft der Daten und / oder die Richtigkeit der Prüfregeln nachvollziehen zu können.
+* If test `A` changes, test `B` and `C` must also be adjusted, 
+  resulting in an increased maintenance effort and greater error probability.  
   
-Diese Probleme klingen auf den ersten Blick nicht besonders "schlimm".
-Für eine komplexere Software können aber relativ schnell aus hunderten von Tests mehrere Tausend Tests werden.
-Und diese dann Warten zu müssen kann den wirtschaftlichen Nutzen der Testautomatisierung schnell auffressen.
-In mehr als einem Projekt wurden aus diesem Grund die automatischen Tests irgendwann komplett verworfen,
-was einen enormen wirtschaftlichen Verlust bedeutet.  
+* Vice Versa, to adjust test `C`, it is also necessary to understand or know test `A` and `B` 
+  in order to comprehend the origin of the data and / or the correctness of the test rules.  
+  
+
+These problems do not seem particularly "bad" at first sight. 
+For a more complex software, however, hundreds of tests can become relatively fast thousand of tests. 
+And then maintaining these can quickly devour the economic benefits of test automation. 
+For this reason in more than one project the automatic tests were rejected completely, which means a huge economic loss.
+
  
-Testumgebungen zurücksetzen
+Resetting Test environment
 ---------------------------
 
-Um diesen Problemen wirkungsvoll entgegen zu treten und diese Abhängigkeiten gar nicht erst (auch nicht unbewusst und ungewollt) entstehen zu lassen,
-empfiehlt es sich die Testumgebung gleich so aufzusetzen, dass man sie schnell und einfach in einen definierten Urzustand "zurücksetzen" kann.
-In den Zeiten von [Virtualisierung](https://de.wikipedia.org/wiki/Virtualisierung_(Informatik)) mit [VirtualBox](https://www.virtualbox.org), [VMware](http://www.vmware.com) und [Hyper-V](https://de.wikipedia.org/wiki/Hyper-V) 
-und Containerizierung mit [Docker](https://www.docker.com), [Vagrant](https://www.vagrantup.com) und Co. ist dies zum Glück kein Problem mehr.
-Ebenso stellt dies (je nach Szenario) üblicherweise auch kein Performance-Problem mehr dar, 
-da im schlimmsten Fall mit Werkzeugen wir [Ansible](https://www.ansible.com), [Chef](https://www.chef.io/), [Saltstack](https://saltstack.com/) und [Puppet](https://puppet.com) eine relativ einfache Verteilung und Parallelisierung in der Cloud möglich ist.
+In order to counteract these problems effectively and not to allow these dependencies to arise (even unconsciously and unintentionally), it is advisable to set up the test environment in such a way that it can be quickly and easily "reset" to a defined original state. 
+In the times of [virtualization](https://de.wikipedia.org/wiki/Virtualisierung_(Informatik)) with [VirtualBox](https://www.virtualbox.org), [VMware](http://www.vmware.com) and [Hyper-V](https://de.wikipedia.org/wiki/Hyper-V) and containerization with [Docker](https://www.docker.com), [Vagrant](https://www.vagrantup.com) and Co., this is no longer a problem. 
+Furthermore, this does not usually represent a performance problem (depending on the scenario) because, in the worst case, a relatively simple distribution and parallelization in the cloud is possible with tools such as [Ansible](https://www.ansible.com), [Chef](https://www.chef.io/), [Saltstack](https://saltstack.com/) and [Puppet](https://puppet.com).
 
-Falls Sie eine solche Lösung anstreben, aber nicht wissen wie Sie sie umsetzen sollen, [sprechen Sie uns an](https://retest.de/kontakt.html).
+If you are looking for a solution, but you do not know how to implement it, [please contact us](https://retest.de/kontakt.html).
 
-Wie empfehlen die Testumgebung so häufig wie möglich zurückzusetzen -- am Besten vor dem Aufzeichnen bzw. Umwandeln jeder einzelnen Suite.
-Um das Zurücksetzen der SUT zu Automatisieren empfehlen wir sogenannte "[Hooks](../konfiguration/konfigurationsdatei.md)".
+We recommend to reset the test environment as often as possible – preferably before recording or rather converting each individual suite. In order to automate the resetting of the SUT, we recommend so-called "[hooks](../konfiguration/konfigurationsdatei.md)".
 
 {% endblock primary %}
