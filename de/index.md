@@ -9,6 +9,7 @@ Zum Schnelleinstieg finden Sie hier kurze [Schritt für Schritt Anleitungen](how
 1. [2 Minuten Difference-Testing Tutorial mit der Demo SUT](howtos/2-min-diff-testing-demo-tutorial.md)
 1. [2 Minuten Surili Tutorial mit der Demo SUT](howtos/2-min-surili-demo-tutorial.md)
 1. [Wie man ReTest für eine SUT konfiguriert](howtos/wie-man-retest-konfiguriert.md)
+1. [Häufig gestellte Fragen](howtos/faqs.md)
 
 Ausführliche Nutzerdokumentation
 --------------------------------
