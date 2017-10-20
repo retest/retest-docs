@@ -92,6 +92,6 @@ Die Tasks zum Konvertieren, Abspielen und Generieren können mit [Ant-FileSets](
 
 ## Ausführung über Maven
 
-*TODO*
+Die zuvor genannte Kommandozeilen-Schnittstelle kann ebenso mittels Maven angesprochen werden, die Ausführung über die entsprechenden Klassen bleibt daher unverändert. Beispielhaft finden sich in der ReTest-Demo (https://update.retest.de/demo) im Workspace eine Maven-POM (`pom.xml`), welche sich nach Belieben erweitern lässt.
 
 {% endblock primary %}
