@@ -1,18 +1,18 @@
 {% extends "de_docs-content.tmpl" %}
 {% block primary %}
 
-Der Aufbau von ReTest
+Der Aufbau von retest
 =====================
 
-ReTest hat einen sehr modularen Aufbau, sodass es prinzipiell für beliebige Plattformen, Technologien und Schnittstellen/Interfaces erweitert werden kann.
+retest hat einen sehr modularen Aufbau, sodass es prinzipiell für beliebige Plattformen, Technologien und Schnittstellen/Interfaces erweitert werden kann.
 Dazu gehören nicht ausschließlich *User* Interfaces sondern prinzipiell beliebige Interfaces.
 
-Hier der Aufbau von ReTest im Überblick (noch sind nicht alle gezeigten Technologien und Plattformen integriert):
+Hier der Aufbau von retest im Überblick (noch sind nicht alle gezeigten Technologien und Plattformen integriert):
 
-![Aufbau ReTest](architecture.png)
+![Aufbau retest](architecture.png)
 
-ReTest interagiert mit der [SUT](../testprozess/was-ist-die-sut.md), so wie andere Capture&Replay-Tools auch.
-Zusätzlich benötigt ReTest jedoch noch weitere Informationen. Dazu gehören:
+retest interagiert mit der [SUT](../testprozess/was-ist-die-sut.md), so wie andere Capture&Replay-Tools auch.
+Zusätzlich benötigt retest jedoch noch weitere Informationen. Dazu gehören:
 
 *   den kompletten zu erfassenden (UI-) Zustand
 *   alle derzeit möglichen Aktionen

@@ -4,7 +4,7 @@
 UI-Elemente ignorieren
 ======================
 
-ReTest erlaubt es auch UI-Elemente dauerthaft zu ignorieren.
+retest erlaubt es auch UI-Elemente dauerthaft zu ignorieren.
 
 ![Warning](../../icons/warning.png) Achtung: Unterschiede in ignorierten UI-Elemente *und allen Kind-Elementen* werden beim Ausführen einer Suite nicht mehr überprüft!
 

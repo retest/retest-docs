@@ -1,20 +1,20 @@
-Das 2-Minuten Surili-Tutorial mit der ReTest Demo
+Das 2-Minuten Surili-Tutorial mit der retest Demo
 =================================================
 
-Mit ReTest brauchen Sie die Tests nicht Mal selbst aufzuzeichnen! Nutzen Sie zum Erzeugen der Tests einfach unseren digitalen Affen – Surili.
+Mit retest brauchen Sie die Tests nicht Mal selbst aufzuzeichnen! Nutzen Sie zum Erzeugen der Tests einfach unseren digitalen Affen – Surili.
 
 Affentesten eingrenzen
 ----------------------
 
 Um nicht die ganze Anwendung auf einmal zu testen, sondern bspw. modulweise vorzugehen, klicken Sie auf den Menüpunkt "Auf Elemente begrenzen".
 
-![ReTest Ansicht 'Whitelisting'](2-min-surili-demo-tutorial-1.png)
+![retest Ansicht 'Whitelisting'](2-min-surili-demo-tutorial-1.png)
 
-Klicken Sie hier auf "Starte Anwendung" um die Demo-Anwendung zu starten. Melden Sie sich mit Benutzer "Max" und Passwort "ReTest" an.
+Klicken Sie hier auf "Starte Anwendung" um die Demo-Anwendung zu starten. Melden Sie sich mit Benutzer "Max" und Passwort "retest" an.
 Klicken Sie nun auf "Markiere UI-Element". Klicken Sie nun im Tab "Adressbuch" der Demo-SUT auf eine leere Fläche auf dem Panel. 
-Das gesamte Panel wird nun grün gefärbt und in der Tabelle in ReTest erscheint das UI-Element AddressbookPanel.
+Das gesamte Panel wird nun grün gefärbt und in der Tabelle in retest erscheint das UI-Element AddressbookPanel.
 
-![ReTest Ansicht 'Whitelisting' mit Auswahl](2-min-surili-demo-tutorial-2.png)
+![retest Ansicht 'Whitelisting' mit Auswahl](2-min-surili-demo-tutorial-2.png)
 
 Klicken Sie nun auf "Speichern..." um diese Whitelist unter einem beliebigen Namen zu speichern.
 
@@ -30,12 +30,12 @@ Affentesten konfigurieren
 
 Um Surili zu konfigurieren und dann zu starten, klicken Sie einfach auf den Menüpunkt "Affentesten".
 
-![ReTest Ansicht 'Affentesten'](2-min-surili-demo-tutorial-3.png)
+![retest Ansicht 'Affentesten'](2-min-surili-demo-tutorial-3.png)
 
 Hier wählen Sie Ihre gerade angefertigte Suite aus, um Surili die gültigen Zugangsdaten beizubringen.
 Dann klicken Sie auf "Weiter".
 
-![ReTest Ansicht 'Affentesting' mit White- und Blacklisting](2-min-surili-demo-tutorial-4.png)
+![retest Ansicht 'Affentesting' mit White- und Blacklisting](2-min-surili-demo-tutorial-4.png)
 
 Im nächsten Schritt können Sie im unteren Bereich die gerade erstellte Whitelist auswählen, damit Surili sich auf diesen Bereich der Anwendung fokusiert.
 
@@ -43,7 +43,7 @@ Im nächsten Schritt können Sie im unteren Bereich die gerade erstellte Whiteli
 
 Klicken Sie nun ebenfalls auf "Weiter".
 
-![ReTest Ansicht 'Affentesting' mit Konfiguration](2-min-surili-demo-tutorial-5.png)
+![retest Ansicht 'Affentesting' mit Konfiguration](2-min-surili-demo-tutorial-5.png)
 
 In dieser Maske können Sie Surili konfigurieren. 
 Zu den Parametern gehört z.B. die Einschränkung des Testings auf bestimmte Code-Bereiche,
@@ -51,7 +51,7 @@ sowie verschiedene Parameter die die Effizienz und Dauer der Testgenerierung sow
 Mehr Details hierzu finden Sie unter [Konfiguration](../konfiguration).
 Für dieses Tutorial lassen Sie einfach alle Einstellungen mit den voreingestellten Werten und klicken auf "Weiter".
 
-![ReTest Ansicht 'Affentesten starten'](2-min-surili-demo-tutorial-6.png)
+![retest Ansicht 'Affentesten starten'](2-min-surili-demo-tutorial-6.png)
 
 In der folgenden Ansicht können Sie das Affentesten starten indem Sie den entsprechenden Button drücken.
 Dann können Sie beobachten, wie Surili zuerst die ausgewählten Suites ausführt um den Anmeldevorgang zu lernen, 
@@ -64,12 +64,12 @@ sie sollten jedoch zumindest ähnlich sein.
 ![Warning](../../icons/warning.png) Achtung: Wenn der Affe sich nicht einloggen kann, 
 dann stellen Sie sicher, dass die Suite, die Sie zum Trainieren benutzt haben aus, keine Unterschiede erzeugt, wenn Sie sie ausführen.  
 
-![ReTest Ansicht 'Affentesten starten'](2-min-surili-demo-tutorial-7.png)
+![retest Ansicht 'Affentesten starten'](2-min-surili-demo-tutorial-7.png)
 
 Wenn Sie jetzt wieder auf "Suite ausführen" klicken, so sehen Sie dort nun eine zusätzliche Suite, 
 mit dem Namen `generated-suite-` und dem aktuellen Tagesdatum.
 
-![ReTest Ansicht 'Affentesten starten'](2-min-surili-demo-tutorial-8.png)
+![retest Ansicht 'Affentesten starten'](2-min-surili-demo-tutorial-8.png)
 
 Nun können Sie diese Suite direkt ausführen oder basierend auf dieser eine weitere Runde Affentesten starten
 - d.h. Sie können das Affentesten auch iterativ durchführen (z.B. wenige Stunden pro Nacht) 

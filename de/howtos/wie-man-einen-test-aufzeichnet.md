@@ -4,7 +4,7 @@
 Wie man einen Test aufzeichnet
 ==============================
 
-In ReTest kann man nur Suites abspielen. Eine Suite kann mehrere Tests enthalten. 
+In retest kann man nur Suites abspielen. Eine Suite kann mehrere Tests enthalten. 
 Um nun von einer aufgezeichneten Aktionsfolge zu einer Suite zu gelangen hat man mehrere Möglichkeiten. 
 Sie können:
 

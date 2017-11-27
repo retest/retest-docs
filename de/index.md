@@ -1,4 +1,4 @@
-Dokumentation von ReTest
+Dokumentation von retest
 ========================
 
 Schnelleinstieg
@@ -8,19 +8,19 @@ Zum Schnelleinstieg finden Sie hier kurze [Schritt für Schritt Anleitungen](how
 
 1. [2 Minuten Difference-Testing Tutorial mit der Demo SUT](howtos/2-min-diff-testing-demo-tutorial.md)
 1. [2 Minuten Surili Tutorial mit der Demo SUT](howtos/2-min-surili-demo-tutorial.md)
-1. [Wie man ReTest für eine SUT konfiguriert](howtos/wie-man-retest-konfiguriert.md)
+1. [Wie man retest für eine SUT konfiguriert](howtos/wie-man-retest-konfiguriert.md)
 1. [Häufig gestellte Fragen](howtos/faqs.md)
 
 Ausführliche Nutzerdokumentation
 --------------------------------
 
-Die Nutzer-Dokumentation von ReTest gliedert sich in die technische Dokumentation von ReTest, ähnlich einem Handbuch:
+Die Nutzer-Dokumentation von retest gliedert sich in die technische Dokumentation von retest, ähnlich einem Handbuch:
 
 1. [Definitionen, Vorbedingungen, Testprozesse](testprozess)
      1. [Definitionen](testprozess/definitionen.md): [Testumgebung](testprozess/testumgebung.md), [SUT](testprozess/was-ist-die-sut.md), etc.
      1. [Wiederholbarkeit und Containerizierung](testprozess/stabile-testumgebung.md)
      1. [Prozess mit einem CI-Server](testprozess/prozess-mit-ci-server.md)
-1. [Installation und Konfiguration von ReTest](konfiguration/)
+1. [Installation und Konfiguration von retest](konfiguration/)
      1. [Welche Ordner gibt es und was enthalten sie](konfiguration/verzeichnisse.md)
      1. [Wichtige Konfigurationsparameter](konfiguration/konfigurationsdatei.md)
      1. [Integration in ein Build-System (bspw. Ant/Maven)](konfiguration/build-system.md)

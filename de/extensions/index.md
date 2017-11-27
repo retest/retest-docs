@@ -1,10 +1,10 @@
 {% extends "de_docs-content.tmpl" %}
 {% block primary %}
 
-ReTest Erweitern
+retest Erweitern
 ================
 
-ReTest ist modular aufgebaut und kann von jedem über einen zentralen Mechanismus erweitert und angepasst werden: 
+retest ist modular aufgebaut und kann von jedem über einen zentralen Mechanismus erweitert und angepasst werden: 
 den [`TestContext`](testcontext.md).
 
 {% endblock primary %}

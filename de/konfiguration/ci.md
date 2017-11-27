@@ -9,7 +9,7 @@ Integration in einen CI-Server
 Einfache Testreports für CI-Server
 ----------------------------------
 
-Basierend auf dem [Test Anything Protocol (TAP)](https://testanything.org/) erstellt ReTest einen einfachen und übersichtlichen Testreport nach jedem via Ant angestoßenen Replay-Task. Die zugehörige Datei findet sich standardmäßig unter `${RETEST_WORKSPACE}/latest_report.tap`.
+Basierend auf dem [Test Anything Protocol (TAP)](https://testanything.org/) erstellt retest einen einfachen und übersichtlichen Testreport nach jedem via Ant angestoßenen Replay-Task. Die zugehörige Datei findet sich standardmäßig unter `${RETEST_WORKSPACE}/latest_report.tap`.
 
 Zur Integration in gängige CI-Server existiert in der Regel ein entsprechendes Plugin. Für Jenkins etwa kann das [TAP Plugin](https://wiki.jenkins-ci.org/display/JENKINS/TAP+Plugin) genutzt werden. Fügen Sie hierzu in der Konfiguration Ihres Jenkins-Projekts die Post-Build-Aktion "Publish TAP Results" hinzu, dabei empfehlen wir folgende Konfiguration:
 
@@ -28,6 +28,6 @@ Zur Integration in gängige CI-Server existiert in der Regel ein entsprechendes 
 - [ ] Flatten TAP result
 - [ ] Skip if build not successful
 
-Von nun an können Sie direkt in Jenkins die Testergebnisse von ReTest begutachten, welche sich ebenfalls auf das Build-Ergebnis (keine Differences: grün, Differences: gelb, Errors: rot) auswirken.
+Von nun an können Sie direkt in Jenkins die Testergebnisse von retest begutachten, welche sich ebenfalls auf das Build-Ergebnis (keine Differences: grün, Differences: gelb, Errors: rot) auswirken.
 
 {% endblock primary %}
