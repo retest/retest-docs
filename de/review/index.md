@@ -18,8 +18,8 @@ sowie eine Zusammenfassung über alle Ergebnisse (5):
 1. Die Gesamtdauer der Ausführung.
 1. Die Gesamtanzahl aller überprüfter UI-Elemente.
 1. Die Gesamtanzahl aller Unterschiede. Da jedes Element in jedem Schritt überprüft wird, kann diese Zahl schnell groß werden. 
-Dank der [Benutzerfreundlichkeit](https://retest.de/product/usability.md) von ReTest, sollte Sie das jedoch nicht abschrecken.
-1. Die Gesamtanzahl aller Fehler beim Abspielen. Dank der [Robustheit der Tests](https://retest.de/product/features.md) muss ReTest selten Tests abbrechen.
+Dank der [Benutzerfreundlichkeit](https://retest.de/product/usability.md) von retest, sollte Sie das jedoch nicht abschrecken.
+1. Die Gesamtanzahl aller Fehler beim Abspielen. Dank der [Robustheit der Tests](https://retest.de/product/features.md) muss retest selten Tests abbrechen.
 
 Durch einen Klick auf die abgespielten Suites (4) kann man sich die Detailergebnisse anschauen.
 Diese sind in einer Baumstruktur aufgegliedert in Suites, Tests, Aktionen, und Unterschiede gruppiert nach Struktur.

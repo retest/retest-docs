@@ -1,6 +1,6 @@
 # retest-docs
 
-This is the documentation of the commercial part (GUI and AI-based monkey testing) of ReTest. The documentation itself
+This is the documentation of the commercial part (GUI and AI-based monkey testing) of retest. The documentation itself
 can be found at https://retest.de/docs/.
 
 ## Contributing

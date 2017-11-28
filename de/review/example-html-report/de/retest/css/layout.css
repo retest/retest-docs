@@ -174,7 +174,7 @@ h2 a {
 }
 
 #page-title h1 span, #page-title a {
-	color: #669900;
+	color: #C1D82F;
 }
 
 #page-title p {
@@ -424,7 +424,7 @@ footer, #intro:after, #content:after {
 
 #info h2 {
 	font: 18px/30px notosans-bold, sans-serif;
-	color: #669900;
+	color: #C1D82F;
 	margin-bottom: 6px;
 }
 
@@ -465,7 +465,7 @@ footer, #intro:after, #content:after {
 
 .button {
 	letter-spacing: 2px;
-	background: none repeat scroll 0 0 #669900;
+	background: none repeat scroll 0 0 #C1D82F;
 	border: medium none;
 	border-radius: 3px;
 	color: #FFFFFF;
@@ -517,7 +517,7 @@ footer, #intro:after, #content:after {
 }
 
 .post .entry-header h1 a:hover, .post .entry-header h1 a:focus {
-	color: #669900;
+	color: #C1D82F;
 }
 
 .post .post-meta {
@@ -530,7 +530,7 @@ footer, #intro:after, #content:after {
 }
 
 .post .post-meta a:hover, .post .post-meta a:focus {
-	color: #669900;
+	color: #C1D82F;
 }
 
 .post .post-meta .date {
@@ -630,7 +630,7 @@ footer, #intro:after, #content:after {
 .post-nav li strong {
 	font: 16px/30px notosans-bold, sans-serif;
 	text-transform: uppercase;
-	color: #669900;
+	color: #C1D82F;
 	letter-spacing: 0.5px;
 	display: block;
 }
@@ -767,7 +767,7 @@ footer .copyright  li:first-child:before {
 }
 
 #go-top a:hover {
-	background-color: #669900;
+	background-color: #C1D82F;
 }
 
 #feedback {
@@ -790,7 +790,7 @@ footer .copyright  li:first-child:before {
     width: 40px;
 }
 #feedback a:hover {
-    background-color: #669900;
+    background-color: #C1D82F;
 }
 
 .height-transition {

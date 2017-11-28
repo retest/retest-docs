@@ -15,7 +15,7 @@ Durch Klick auf "Speichern..." können Sie die Suite abspeichern bzw. mit "Neu" 
 
 ![GUI Screenshot Suite Zusammenstellen](suite-zusammenstellen-1.png)
 
-![Warning](../../icons/warning.png) **Achtung:** ReTest speichert lediglich den relativen Pfad zum Test. 
+![Warning](../../icons/warning.png) **Achtung:** retest speichert lediglich den relativen Pfad zum Test. 
 Wenn Sie Tests auf Dateiebene nach dem Zusammenstellen der Suite verschieben, schlägt das Umwandeln fehl.
 
 Nach dem Zusammenstellen einer Suite müssen Sie sie zunächst [umwandeln](suite-umwandeln.md). 
