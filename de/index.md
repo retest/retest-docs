@@ -35,6 +35,7 @@ Die Nutzer-Dokumentation von retest gliedert sich in die technische Dokumentatio
      1. [Suite umwandeln](recapture/suite-umwandeln.md)
 1. [RePlay](replay/)
      1. [Suite ausführen](replay/suite-ausfuehren.md)
+     1. [Adaptionsregeln](replay/adaptions-regeln.md)
      1. [UI-Elemente Ignorieren](replay/ui-elemente-ignorieren.md)
 1. [ReView](review/)
      1. [Testreport reviewen](review/index.md)
