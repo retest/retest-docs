@@ -30,6 +30,12 @@ Vordefinierte Variablen sind:
 - `previousAction` referenziert die zuvor ausgeführte Aktion. Dies ist die zuletzt eingefügte Aktion, sofern eine eingefügt wurde.
 - `nextAction` referenziert die als nächstes auszuführende Aktion.
 
+Sie können auch auf "frühere" Informationen aus dem Test (bspw. mit welchem Benutzer wurde eingelogt etc.) zugreifen. 
+Die Ausführungsumgebung bleibt erhalten. 
+Alle Variablen, die sie in einer Ausführung des Skriptes setzen, sind bei der nächsten Ausführung noch gesetzt.
+Sie können also einfach eine Funktion erstellen, die sich beim Anmelden den angemeldeten Benutzer "merkt", indem eine entsprechende Variable gesetzt wird.
+Diese Variable können Sie dann bei späteren Ausführungen einfach abfragen.
+
 Wenn Sie der Meinung sind, dass die Informationen, die an die Skripte weitergegeben werden, für Ihre Zwecke nicht ausreichend sind, wenden Sie sich bitte an den Support.
 
 Für einige einfache Beispiele von BeanShell, werfen Sie bitte einen Blick auf unsere Demo.
