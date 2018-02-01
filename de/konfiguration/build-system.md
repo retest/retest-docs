@@ -4,94 +4,76 @@
 Integration in ein Build-System
 ===============================
 
-Wird retest bspw. in ein Build-System integriert, so sollte die Ausführung nicht über die GUI erfolgen.
-Generell ist es sinnvoll, retest dauerhaft in Ihr Build-System zu integrieren. 
-Dazu gibt es derzeit drei Möglichkeiten:
+Wird retest bspw. in ein Build-System integriert, so sollte die Ausführung nicht über die GUI erfolgen. Generell ist es sinnvoll, retest dauerhaft in Ihr Build-System zu integrieren. Hierfür stellt retest eine eigene Kommandozeile (engl. Command Line Interface, CLI) zur Verfügung. Dadurch ist die Integration in gängige Build-Systeme problemlos möglich. Falls Sie hierbei Unterstützung benötigen, so sprechen Sie uns gerne an. Haben Sie eine Integration durchgeführt, so lassen Sie es uns gerne wissen, damit wir dies hier dokumentieren können.
 
-1. Ausführung direkt über die [Kommandozeile](https://de.wikipedia.org/wiki/Kommandozeile).
-2. Ausführung über [Ant](http://ant.apache.org).
-3. Ausführung über [Maven](https://maven.apache.org).
+## retest CLI
 
-Durch die Möglichkeit der Ausführung über die Kommandozeile, ist die Integration in gängige Build-Systeme problemlos möglich.
-Falls Sie hierbei Unterstützung benötigen, so sprechen Sie uns gerne an.
-Haben Sie eine Integration durchgeführt, so lassen Sie es uns wissen, damit wir dies hier dokumentieren können.
-
-Bei allen drei Schnittstellen stehen Ihnen folgende Befehle zur Verfügung:
-
-1. Konvertieren von Suites
-2. Generieren von Suites
-3. Abspielen von Suites
-4. Automatisches Updaten von retest 
-5. Migrieren von Dateien nach einem retest-Update
-
-## Ausführung über die Kommandozeile
-
-Die Ausführung über die Kommandozeile erfolgt über den `java`-Befehl. Folgendes Shell-Skript startet beispielsweise das Abspielen aller ExecSuites:
+Das retest CLI sollte unter Windows über die mitgelieferte `retest.bat` (unter \*nix Systemen mittels dem `retest` Executable) angesprochen werden. In der Kommandozeile können Sie dann mit `retest --help` (oder `-h`) folgende Hilfe aufrufen:
 
 ```
-# retest installation directory.
-retest_home="./"
-# retest workspace containing actions, tests, suites, and license.
-retest_workspace="$retest_home/../retest-workspace"
-# Properties file to configure retest.
-properties="$retest_workspace/retest.properties"
-# System under test (SUT), i.e. the application you would like to test.
-system_under_test="$retest_home/../system-under-test"
-
-cd "$system_under_test"
-
-javaArgs=" -Dde.retest.configFile=$properties -Dsun.java2d.d3d=false -Dsun.java2d.xrender=false -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=$retest_workspace -XX:-OmitStackTraceInFastThrow -Xms1g "
-javaAgent=" -javaagent:$retest_home/retest.jar "
-paths=" -Dde.retest.workDirectory=$retest_workspace -Dde.retest.Dir=$retest_home -Dlogback.configurationFile=$retest_workspace/logback.xml "
-
-mkdir -p "$retest_workspace/logs"
-
-exec java $javaArgs $javaAgent $paths -cp "$retest_home/retest.jar" de.retest.TestReplayer
+$ retest --help
+Usage: retest [-hv]
+Start the retest GUI.
+  -h, --help                  Display this help message.
+  -v, --version               Display version info.
+Commands:
+  convert   Convert the given suites.
+  replay    Replay the given execsuites.
+  generate  Generate new execsuites.
+  update    Update retest installation.
+  migrate   Migrate all retest files to installed version.
 ```
 
-Bzw. auf Windows:
+Jedes Kommando bietet selbst nochmal die Möglichkeit, eine Hilfe mit `--help` bzw. `-h` aufzurufen:
 
 ```
-:: retest installation directory.
-SET "retest_home=%~dp0"
-:: retest workspace containing actions, tests, suites, and license.
-SET "retest_workspace=%retest_home%\..\retest-workspace"
-:: Properties file to configure retest.
-SET "properties=%retest_workspace%\retest.properties"
-:: System under test (SUT), i.e. the application you would like to test.
-SET "system_under_test=%retest_home%\..\system-under-test"
-
-cd %system_under_test%
-
-SET "javaArgs= -Dde.retest.configFile=%properties% -Dsun.java2d.d3d=false -Dsun.java2d.xrender=false -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=%retest_workspace% -XX:-OmitStackTraceInFastThrow -Xms1g "
-SET "javaAgent= -javaagent:%retest_home%\retest.jar "
-SET "paths= -Dde.retest.workDirectory=%retest_workspace% -Dde.retest.Dir=%retest_home% -Dlogback.configurationFile=%retest_workspace%\logback.xml "
-
-IF NOT EXIST "%retest_workspace%\logs" MKDIR %retest_workspace%\logs
-
-java %javaArgs% %javaAgent% %paths% -cp %retest_home%\retest.jar de.retest.TestReplayer
+$ retest replay --help
+Usage: replay [<execsuites>]...
+Replay the given execsuites.
+      [<execsuites>]...       Execsuites to replay. Leave blank to replay all
+                                execsuites in the workspace.
 ```
 
-Bei der Ausführung über die Kommandozeile können Sie grundsätzlich folgende Klassen verwenden:
+Am Beispiel des `replay` Kommando ist zu sehen, dass sich das retest CLI grundsätzlich an Git und dergleichen orientiert. `replay` etwa erwartet (wie z. B. `git add`) eine Liste von Dateien, genau genommen eine Liste von Execsuites, welche ausgeführt werden sollen. Die Dateinamen sind stets relativ zum jeweiligen Ordner, sprich im Fall von Execsuites relativ zu `retest-workspace/execsuites`. Werden keine Execsuites übergeben, so werden dort alle Execsuites ausgeführt.
 
-1. `de.retest.TestConvert` zum Konvertieren von Suites.
-2. `de.retest.TestGenerator` zum Generieren von Tests und zum Monkey Testing.
-3. `de.retest.TestReplayer` zum Abspielen von Suites.
-4. `de.retest.Updateretest` zum Aktualisieren von retest.
-5. `de.retest.TestMigrator` zum Migrieren von retest-Dateien nach einem Update.
+Beispiel: Integration in Maven
+------------------------------
 
-In den Fällen 1, 2 und 3 wird als Argument eine Liste Suites (1) bzw. ExecSuites (2 und 3), getrennt durch Semikolon, erwartet. Wird kein Argument übergeben, so werden alle Suites bzw. ExecSuites verwendet. Zur Migration können beliebige Dateien (Actions, Tests und ExecSuites), ebenfalls getrennt durch Semikolon, übergeben werden. Wird hierbei kein Argument mitgeliefert, dann werden alle Actions, Tests und ExecSuites migriert. Im Falle eines Updates (5) ist kein Argument notwendig.
+Zur Integration in Maven bietet sich das [Exec Maven Plugin](http://www.mojohaus.org/exec-maven-plugin/) an, welches der Ausführung von Executables und Java-Programmen via Maven dient. Eine Konfiguration könnte hierbei wie folgt aussehen:
 
-## Ausführung über Ant
+```
+<project>
+  ...
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+        <executions>
+          <execution>
+            ...
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <executable>retest</executable>
+          <arguments>
+            <argument>replay</argument>
+            <argument>my-execsuite-0.execsuite</argument>
+            <argument>my-execsuite-1.execsuite</argument>
+            ...
+          </arguments>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+   ...
+</project>
+```
 
-retest kann ebenfalls via Ant ausgeführt werden. 
-Hierfür stehen für die o. g. Aufgaben (Aufnehmen, Abspielen, Generieren etc.) vorgefertigte Tasks zur Verfügung. 
-Ein entsprechendes funktionierendes Beispiel findet sich in der retest-Demo (https://update.retest.de/demo) in der `build.xml` (im retest-Workspace), welche Sie für Ihre eigenen Zwecke adaptieren können.
-
-Die Tasks zum Konvertieren, Abspielen und Generieren können mit [Ant-FileSets](https://ant.apache.org/manual/Types/fileset.html) sehr flexibel konfiguriert werden.
-
-## Ausführung über Maven
-
-Die zuvor genannte Kommandozeilen-Schnittstelle kann ebenso mittels Maven angesprochen werden, die Ausführung über die entsprechenden Klassen bleibt daher unverändert. Beispielhaft finden sich in der ReTest-Demo (https://update.retest.de/demo) im Workspace eine Maven-POM (`pom.xml`), welche sich nach Belieben erweitern lässt.
+Wie zu sehen ist, ruft das Plugin zunächst das `retest` Executable auf, gefolgt vom Kommando `replay` und entsprechenden Execsuites.
 
 {% endblock primary %}
