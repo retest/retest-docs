@@ -6,7 +6,7 @@ Adaptions Regeln
 
 Hier können Sie Regeln bearbeiten, um Tests während der Wiedergabe zu ändern. Wir nennen das "passives Update".
 Dies bietet eine viel größere Flexibilität, um eine große Menge aufgezeichneter oder generierter Tests anzupassen, bei gleichzeitig viel weniger erforderlichem Aufwand.
-Es ermöglicht auch, Tests viel flexibler und anpassungsfähiger zu gestalten, und z.B. das Erscheinen oder Verschwinden von Popups zu erlauben dies entsprechend zu behandeln.
+Es ermöglicht auch, Tests wesentlich flexibler und anpassungsfähiger zu gestalten und z. B. das Erscheinen oder Verschwinden von Popups zu erlauben und dies entsprechend zu behandeln.
 
 ![Editor zum Bearbeiten der Adaptionsregeln](adaptions-regeln.png)
 
@@ -18,7 +18,7 @@ Beim Speichern wird Ihr Skript kurz auf syntaktische Korrektheit geprüft.
 Die Reihenfolge, in der die Skripts während der Wiedergabe ausgeführt werden, ist wie folgt:
 
 1. Zuerst werden zusätzliche Aktionen in den Test eingefügt und direkt ausgeführt, solange Aktionen vom Skript "Aktionen einfügen" zurückgegeben werden.
-   Wenn mehr als die konfigurierte Eigenschaft `de.retest.maxInsertedActions` Aktionen eingefügt werden, wird ein Fehler ausgelöst, um Endlosschleifen zu vermeiden.
+   Wenn mehr als die konfigurierte Property `de.retest.maxInsertedActions` Aktionen eingefügt werden, wird ein Fehler ausgelöst, um Endlosschleifen zu vermeiden.
 2. Dann wird die `nextAction` übersprungen, wenn das Skript "Aktion überspringen" `true` zurückgibt.
 3. Wenn die Aktion nicht übersprungen wird, wird sie gemäß dem Skript "Aktion ändern" geändert und dann ausgeführt.
 
