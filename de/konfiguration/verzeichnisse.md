@@ -11,10 +11,6 @@ retest-Installationsverzeichnis
 Dieser Ordner sollte eine *unberührte* retest-Installation beinhalten, genau so wie sie durch das Entpacken der
 retest-Datei von https://update.retest.de/ entsteht.
 
-Beim Starten versucht retest diesen Ordner zu finden. Wenn das start-Skript (`retest-gui.bat` (Windows) oder
-`retest-gui.sh` (Linux/Mac)) aus dem retest-Installationsverzeichnis heraus kopiert wurde, muss der Pfad zu diesem
-Verzeichnis mittels dem Parameter `de.retest.Dir` gesetzt werden.
-
 Um retest zu aktualisieren, ersetzen Sie diesen Ordner komplett mit dem Inhalt der neuen ZIP-Datei. Beim automatischen
 Update werden ältere Versionen mit dem Suffix `_old_$DATE_OF_REPLACEMENT` versehen.
 
