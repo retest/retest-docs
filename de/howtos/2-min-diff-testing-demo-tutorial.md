@@ -8,9 +8,10 @@ Nach dem entzippen finden Sie drei Ordner:
 2. `retest-workspace` enthält alle Arbeits-Daten von retest: Konfigurationen, Aktionsfolgen, Tests, Suites, Berichte, Log-Dateien, ...
 3. `system-under-test` enthält die zu testende Anwendung, in diesem Fall eine kleine Demo.
 
-Öffnen Sie den Ordner `retest` und klicken Sie je nach Betriebssystem auf die Datei `retest-gui.bat` (Windows) oder `retest-gui.sh` (Linux / Mac).
-Dann sollte sich der retest Startbildschirm öffnen. 
-Sollten Sie bis hierher Probleme haben, so melden Sie sich bitte unter http://feedback.retest.de/ oder per E-Mail unter [support@retest.de](mailto:support@retest.de). 
+Öffnen Sie den Ordner `retest` und klicken Sie, je nach Betriebssystem, auf `retest-gui.exe` (Windows)
+oder die ausführbare `retest`-Datei (Linux/Mac). Dann sollte sich der retest Startbildschirm öffnen. 
+Sollten Sie bis hierher Probleme haben, so melden Sie sich bitte unter http://feedback.retest.de/
+oder per E-Mail unter [support@retest.de](mailto:support@retest.de). 
 
 ![retest Startbildschirm](2-min-diff-testing-demo-tutorial-1.png)
 

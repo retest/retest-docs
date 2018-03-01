@@ -11,8 +11,8 @@ After unzipping you will find three folders:
 2. `retest-workspace` contains all the work data from retest: Configurations, action sequences, tests, suites, reports, log files, ...
 3. `system-under-test` contains the application to be tested, in this case a small demo.
 
-Open the folder `retest` and, depending on the operating system, doubleclick the file `retest-gui.bat` (Windows) or `retest-gui.sh` (Linux / Mac).
-Then retest should start and the start screen should open.
+Open the folder `retest` and, depending on the operating system, doubleclick `retest-gui.exe` (Windows)
+or the executable `retest` file (Linux/Mac). Then retest should start and the start screen should open.
 If you encounter any problems, please contact http://feedback.retest.de/ or send an e-mail to [support@retest.de](mailto:support@retest.de).
 
 ![retest start screen](2-min-diff-testing-demo-tutorial-1.png)

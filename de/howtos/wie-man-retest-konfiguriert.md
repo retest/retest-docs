@@ -1,22 +1,11 @@
 Wie man retest konfiguriert
 ===========================
 
-Damit retest ihre SUT starten kann, muss man ein paar passende Werte in die [`retest.properties`-Datei](../konfiguration/konfigurationsdatei.md) eintragen.
+Damit retest Ihre SUT starten kann, müssen diverse Werte in die [`retest.properties`-Datei](../konfiguration/konfigurationsdatei.md) eingetragen werden:
 
-Auf UNIX
---------
+1. Die Main-Klasse Ihrer SUT wird im Parameter `de.retest.sut.mainClass` erfasst.
+1. Zusätzliche Programm-Argumente können mithilfe von `de.retest.sut.mainArgs` eingetragen werden.
+1. Mittels `de.retest.sut.applicationClassPath` werden die JARs Ihrer SUT bestimmt. Zum Separieren mehrerer Angaben wird unter Windows `;` verwendet, \*nix-Systeme verwenden `:`.
+1. `de.retest.sut.dependenciesClassPath` bietet die Möglichkeit, zusätzliche Abhängigkeiten oder dergleichen einzubinden. Auch hier können Sie mit `;` bzw. `:` mehrere Angaben machen.
 
-Auf einem UNIX-System kann man diese Werte am einfachsten bestimmen, indem Sie ihre übliche `.sh`-Datei, die Sie normalerweise zum Starten Ihrer Anwendung benutzen, 
-mit `bash -x <your.sh>` ausführen. Mit diesem Parameter sieht man genau, welche Befehle (nach Auflösen aller Variablen) tatsächlich ausgeführt werden.
-
-Der letztendlich ausgeführte Befehl sollte in etwa diese Form haben:
-    
-    exec java -DsomeParam=someValue <...some more params...> -cp <...some paths and .jar-files...> com.your.Main <...some program arguments...>
-    
-Jetzt müssen Sie folgendes tun:
-
-- Die Konfigurationsparameter (dem Aussehen nach `-DsomeParam=someValue`) in die Datei `retest-gui.sh` hinter `javaArgs=` eintragen.
-- Die Pfade und Dateien hinter dem `-cp` in die `retest.properties`-Datei als Parameter `de.retest.sut.dependenciesClassPath=` eintragen. Eventuell müssen Sie hier alle `;` mit `:` ersetzen.
-- Die Main-Klasse in die in die `retest.properties`-Datei als Parameter `de.retest.sut.mainClass=` eintragen.
-- Und Programm-Argumente (falls vorhanden) in die `retest.properties`-Datei als Parameter `de.retest.sut.mainArgs=` eintragen.
-
+Sollten Sie nicht das retest-Standardlayout verwenden, sprich die SUT befindet *nicht* im Nachbarordner `system-under-test` von `retest`, so können Sie via `de.retest.sut.applicationPath` den entsprechenden Installationspfad bestimmen.
