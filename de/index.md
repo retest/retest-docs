@@ -26,6 +26,7 @@ Die Nutzer-Dokumentation von retest gliedert sich in die technische Dokumentatio
      1. [Integration in ein Build-System](konfiguration/build-system.md)
      1. [Integration in einen CI-Server](konfiguration/ci.md)
      1. Integration in Jira/Bugtracking
+     1. [Firewall-Konfiguration](konfiguration/firewall.md)
 1. [ReCapture](recapture/)
      1. [Aufzeichnen einer Aktionsfolge](recapture/aktionsfolge-aufzeichnen.md)
      1. [Bearbeiten einer Aktionsfolge](recapture/aktionsfolge-bearbeiten.md)
