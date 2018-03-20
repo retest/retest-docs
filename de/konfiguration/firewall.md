@@ -15,7 +15,7 @@ Wenn Sie das erste Mal eine Java-Anwendung starten, die sich mit dem Netzwerk ve
 In diesem Fall klicken Sie bitte auf "Zugriff zulassen".
 
 Falls Sie bereits eine andere Java-Anwendung gestartet haben, die diesen Zugriff angefordert hat, ist es möglich, dass Sie bereits abgelehnt haben.
-Dann müssen Sie in die Windows-Konfiguration (je nach Windows Version unterschiedlich), und dort den Zugriff erlauben.
+Dann müssen Sie in die Windows-Konfiguration (je nach Windows-Version unterschiedlich) und dort den Zugriff erlauben.
 
 ![Firewall-Konfiguration in Windows 10](win10-firewall-allow-java.png)
 
