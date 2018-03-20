@@ -9,5 +9,6 @@ Installation und Konfiguration
 1. [Integration in ein Build-System](build-system.md)
 1. [Integration in einen CI-Server](ci.md)
 1. Integration in Jira / Bugtracking
+1. [Firewall-Konfiguration](firewall.md)
 
 {% endblock primary %}
