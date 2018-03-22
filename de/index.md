@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 Dokumentation von retest
 ========================
 
@@ -45,3 +48,5 @@ Die Nutzer-Dokumentation von retest gliedert sich in die technische Dokumentatio
      1. [Elemente ausschließen](surili/blacklisting.md)
      1. [Auf Elemente begrenzen](surili/whitelisting.md)
      1. [Affentesten](surili/affentesten.md)
+
+{% endblock primary %}

@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 Häufig gestellte Fragen
 =======================
 
@@ -14,3 +17,5 @@ Mehr Infos finden Sie in [diesem Tutorial](https://java.com/de/download/help/win
 ### Fehlende Menüeinträge
 
 Wenn Sie ReTest starten und prompt einen Fehler erhalten, gefolgt von einer GUI ohne Menüeinträge, dann ist dies mit großer Wahrscheinlichkeit Java 9 geschuldet. Wir unterstützen derzeit nur Java 6, 7 oder 8.
+
+{% endblock primary %}

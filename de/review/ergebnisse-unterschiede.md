@@ -1,4 +1,5 @@
-{% extends "review-content.tmpl" %} {% block primary %}
+{% extends "review-content.tmpl" %}
+{% block primary %}
 
 Unterschiede
 ============

@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 Wie man retest konfiguriert
 ===========================
 
@@ -9,3 +12,5 @@ Damit retest Ihre SUT starten kann, müssen diverse Werte in die [`retest.proper
 1. `de.retest.sut.dependenciesClassPath` bietet die Möglichkeit, zusätzliche Abhängigkeiten oder dergleichen einzubinden. Auch hier können Sie mit `;` bzw. `:` mehrere Angaben machen.
 
 Sollten Sie nicht das retest-Standardlayout verwenden, sprich die SUT befindet *nicht* im Nachbarordner `system-under-test` von `retest`, so können Sie via `de.retest.sut.applicationPath` den entsprechenden Installationspfad bestimmen.
+
+{% endblock primary %}

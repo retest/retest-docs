@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 Das 2-Minuten Surili-Tutorial mit der retest Demo
 =================================================
 
@@ -77,3 +80,4 @@ und jede Runde mit den Ergebnissen der vorherigen Runde trainieren.
 
 Oder Sie schauen sich an, wie Sie Surili für bessere Ergebnisse [genauer parametrieren](../konfiguration) können.
 
+{% endblock primary %}

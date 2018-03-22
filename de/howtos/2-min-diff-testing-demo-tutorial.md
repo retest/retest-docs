@@ -1,3 +1,6 @@
+{% extends "de_docs-content.tmpl" %}
+{% block primary %}
+
 Das 2-Minuten Difference-Testing-Tutorial mit der retest Demo
 =============================================================
 
@@ -97,3 +100,5 @@ so klicken Sie einfach auf den Menüpunkt "Ignorierte Elemente".
 Als nächstes können Sie komplexere [Tests](../recapture/test-zusammenstellen.md) und [Suites](../recapture/suite-zusammenstellen.md) aufzeichnen,
 Ihre Aufzeichnung [interaktiv debuggen](../recapture/actionsfolge-bearbeiten.md),
 oder unsere [2 Minuten Surili-Tour mit der retest Demo](2-min-surili-demo-tutorial.md) machen.
+
+{% endblock primary %}
