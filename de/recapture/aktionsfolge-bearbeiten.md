@@ -19,10 +19,10 @@ Wenn Sie an einem Haltepunkt halten können Sie entweder über "Fortsetzen" die 
 über "Einzelschritt" die Aktionen einzeln ausführen, oder über "Aktionen aufzeichnen" weitere Aktionen aufzeichnen, 
 welche dann in der Aktionsfolge nach dem Haltepunkt eingefügt werden.
 
-Über die "Pfeil nach oben"-, "Minus"- und "Pfeil nach untern"-Knöpfe können Sie Aktionen entfernen oder umsortieren.
+Über die "Pfeil nach oben"-, "Minus"- und "Pfeil nach unten"-Knöpfe können Sie Aktionen entfernen oder umsortieren.
 Mit "Speichern" speichern Sie Ihre Änderungen ab.
 
-Wenn Sie eine Aktionsfolge geändert haben sollten Sie sie erneut entweder [einzeln umwandeln](aktionsfolge-umwandeln.md) 
+Wenn Sie eine Aktionsfolge geändert haben, sollten Sie sie erneut entweder [einzeln umwandeln](aktionsfolge-umwandeln.md) 
 oder die zugehörige [Suite umwandeln](suite-umwandeln.md).
 
 {% endblock primary %}
