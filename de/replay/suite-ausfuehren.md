@@ -15,6 +15,6 @@ Um mehrere Suites auf einmal abzuspielen, halten Sie `Strg` gedrückt, und wähl
 
 ![GUI screenshot Suite ausführen](suite-ausfuehren-1.png)
 
-Nachdem die Suite abgespielt wurde öffnet sich automatisch die Maske zum [reviewen der Testergebnisse](../review/index.md). 
+Nachdem die Suite abgespielt wurde, öffnet sich automatisch die Maske zum [reviewen der Testergebnisse](../review/index.md). 
 
 {% endblock primary %}

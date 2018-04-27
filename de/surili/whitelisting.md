@@ -4,8 +4,8 @@
 Auf Elemente begrenzen
 ======================
 
-Das Whitelisting dient dazu den Affen auf bestimmte Masken oder Module zu fokusieren.
-Dies ist z.B. sinnvoll falls man sich nicht sicher ist, ob man alle kritischen UI-Elemente mittels Blacklisting "verboten" hat.
+Das Whitelisting dient dazu, den Affen auf bestimmte Masken oder Module zu fokusieren.
+Dies ist z.B. sinnvoll, falls man sich nicht sicher ist, ob man alle kritischen UI-Elemente mittels Blacklisting "verboten" hat.
 
 Außerdem Hilft es dem Affen sich beim Testen schneller auf ein bestimmtes Modul, Package oder ein Klasse zu fokusieren:
 Mit Hilfe seiner Künstlichen Intelligenz und der integrierten Abdeckungsanalyse wird der Affe sich langfristig auf das konfigurierte Modul bzw. Packet konzentrieren.
