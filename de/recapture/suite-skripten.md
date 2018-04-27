@@ -2,13 +2,13 @@
 {% block primary %}
 
 Suite skripten
-=====================
+==============
 
 ___
 ![Warning](../../icons/warning.png) Achtung: Folgendes Feature ist nur im Power-User-Mode verfügbar!
 ___
 
-Suites können mithilfe einer [CSV-Datei](https://de.wikipedia.org/wiki/CSV_(Dateiformat)) in mehrere `execsuites` exportiert werden.
+Suites können mithilfe einer [CSV-Datei](https://de.wikipedia.org/wiki/CSV_(Dateiformat)) in mehrere Execsuites exportiert werden.
 
 Das Skripten von Suites ist eine erweiterte Funktion in [Suite umwandeln](suite-umwandeln.md). 
 
@@ -31,9 +31,9 @@ Beispiele für Variablennamen:
 
 Eine Variable kann auch mehreren Attributen zugeordnet werden, indem der gleiche Name bei unterschiedlichen Attributen definiert wird (*Kollision*). Hierbei sollte allerdings überprüft werden, ob alle Attribute den **gleichen Typ und Bedeutung** haben. 
 
-Wo eine Kollision hilfreich sein kann:
+Wo eine Kollision hilfreich bzw. nicht hilfreich sein kann:
 * *Hilfreich:* Beim Eintragen eines Vornamens in mehrere Textfelder.
-* *Nicht Hilfreich:* Zwei Textfelder mit jeweils dem Vornamen und Nachnamen.
+* *Nicht hilfreich:* Zwei Textfelder mit jeweils dem Vornamen und Nachnamen.
 
 #### Typen
 
@@ -54,7 +54,7 @@ Path | retest-Pfad einer Komponente der Sut | Window/JRootPane_0/JLayeredPane_0/
 
 ### Aufbau
 
-Die erste Zeile repräsentiert die Spaltenüberschrift, wobei die erste Spalte ignoriert wird (im Folgenden immer mit *Variablenname* ersetzt). Dort werden die Testnamen definiert und repräsentieren einzelne Test-Abläufe. Testnamen sollten nie leer sein und nie zweimal vorkommen.
+Die erste Zeile repräsentiert die Spaltenüberschrift, wobei die erste Spalte ignoriert wird (im Folgenden immer mit *Variablenname* ersetzt). Dort werden die Testnamen definiert und repräsentieren einzelne Testabläufe. Testnamen müssen nie leer sein und nie mehrfach vorkommen.
 
 Die erste Spalte repräsentiert die benutzten Variablen anhand ihres Namens. Es müssen alle Variablen angegeben sein. Die Werte werden in die entsprechenden Spalten der Zeile eingetragen.
 
@@ -74,4 +74,4 @@ variable-B    | Wert-4 |        | Wert-5
 
 ### Hilfreiches
 
-* Importieren oder Exportieren von [Excel zu CSV](https://support.office.com/de-de/article/importieren-oder-exportieren-von-textdateien-txt-oder-csv-5250ac4c-663c-47ce-937b-339e391393ba?ui=de-DE&rs=de-DE&ad=DE)
+Importieren oder Exportieren von [Excel zu CSV](https://support.office.com/de-de/article/importieren-oder-exportieren-von-textdateien-txt-oder-csv-5250ac4c-663c-47ce-937b-339e391393ba?ui=de-DE&rs=de-DE&ad=DE).
