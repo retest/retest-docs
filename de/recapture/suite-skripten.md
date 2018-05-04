@@ -75,3 +75,5 @@ variable-B    | Wert-4 |        | Wert-5
 ### Hilfreiches
 
 Importieren oder Exportieren von [Excel zu CSV](https://support.office.com/de-de/article/importieren-oder-exportieren-von-textdateien-txt-oder-csv-5250ac4c-663c-47ce-937b-339e391393ba?ui=de-DE&rs=de-DE&ad=DE).
+
+{% endblock primary %}
