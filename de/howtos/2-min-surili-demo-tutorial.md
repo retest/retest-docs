@@ -80,4 +80,11 @@ und jede Runde mit den Ergebnissen der vorherigen Runde trainieren.
 
 Oder Sie schauen sich an, wie Sie Surili für bessere Ergebnisse [genauer parametrieren](../konfiguration) können.
 
+Coverage wieder aktivieren
+--------------------------
+
+Der genetische Algorithmus ben&ouml;tigt Coverage-Informationen damit er funktioniert.
+Um Probleme mit der Windows-Firewall zu umgehen, starten wir die Demo in der selben JVM - ohne diese Infos. 
+Um dieses Feature wieder zu aktivieren bearbeiten Sie die retest.properties, und löschen Sie die Zeile mit `de.retest.launcher=de.retest.launcher.DemoLauncher`.
+
 {% endblock primary %}
