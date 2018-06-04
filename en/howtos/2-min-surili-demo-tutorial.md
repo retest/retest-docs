@@ -82,11 +82,11 @@ Now you can run this suite directly or start another round of Monkey Testing bas
 This means you can also iteratively improve the results (for example, a few hours per night)
 and each round train the monkey with the results of the previous round.
 
-Reactivate Coverage
--------------------
+Reactivate Code Coverage
+------------------------
 
-The GA needs coverage data to work. 
-To circumvent the Windows firewall, we start the demo in the same JVM, without that data. 
-To reenable this feature, simple edit the retest.properties file, and delete the line with `de.retest.launcher=de.retest.launcher.DemoLauncher`. 
+The genetic algorithm needs coverage data to work. 
+To circumvent the Windows firewall, we start the demo in the same JVM without that data. 
+To reenable this feature, simple edit the `retest.properties` file and delete the line with `de.retest.launcher=de.retest.launcher.DemoLauncher`. 
 
 {% endblock primary %}
