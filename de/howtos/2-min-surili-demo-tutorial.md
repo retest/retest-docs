@@ -80,4 +80,11 @@ und jede Runde mit den Ergebnissen der vorherigen Runde trainieren.
 
 Oder Sie schauen sich an, wie Sie Surili für bessere Ergebnisse [genauer parametrieren](../konfiguration) können.
 
+Codeabdeckung wieder aktivieren
+-------------------------------
+
+Der genetische Algorithmus benötigt Informationen zur Codeabdeckung damit er funktioniert.
+Um Probleme mit der Windows-Firewall zu umgehen, starten wir die Demo inderselben JVM -- ohne diese Infos. 
+Um dieses Feature wieder zu aktivieren, bearbeiten Sie die `retest.properties`-Datei und löschen Sie die Zeile mit `de.retest.launcher=de.retest.launcher.DemoLauncher`.
+
 {% endblock primary %}
