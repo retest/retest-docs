@@ -40,4 +40,4 @@ Nach durchgeführten Änderungen, muss die Aktion abgespeichert werden.
 
 Das starke Verändern einer Aktion kann den Ablauf der Aktionsfolge beeinflussen. Diese Änderungen müssen entweder manuell durch das Einfügen zusätzlicher Aktionen korrigiert werden oder in [Adaptionsregeln](../replay/adaptions-regeln.md) muss eine neue Regel definiert werden.
 
-{% endblock primary}
+{% endblock primary %}
