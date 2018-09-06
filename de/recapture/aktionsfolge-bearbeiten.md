@@ -9,7 +9,7 @@ Dazu klicken Sie einfach auf den Menü-Punkt "Aktionsfolge bearbeiten" (1).
 
 ![Aktionfolge beabeiten](aktionsfolge-bearbeiten-1.png)
 
-In der sich öffnenden Maske können Sie über "Laden" (2) eine Aktionsfolge laden.
+In der sich öffnenden Maske können Sie über "Öffnen..." (2) eine Aktionsfolge laden.
 Indem Sie auf einzelne Aktionen in der Tabelle klicken, können Sie die zugehörigen Aktionsziele und Ergebnisfenster anschauen.
 
 Über "Haltepunkt" (3) können Sie einen Haltepunkt setzen, bis zu welchem die Aktionsfolge ausgeführt werden soll.
