@@ -16,7 +16,7 @@ retest verwendet mehrere Begriffe, die einer näheren Erläuterung bedürfen:
   Jede ausführbare Suite sollte von allen anderen Suites mittels einer [stabilen Testumgebung](stabile-testumgebung.md) entkoppelt sein.
 * Eine Datei mit der Endung `.test` enthält eine Folge von Aktionssequenzen, welche auf der Maske "[Test zusammenstellen](../recapture/test-zusammenstellen.md)" baukastenartig zu einem Test zusammengefasst wurden.
 * Eine Datei mit der Endung `.suite` enthält eine Folge von Tests, welche auf der Maske "[Suite zusammenstellen](../recapture/suite-zusammenstellen)" baukastenartig zu einer Suite zusammengestellt wurden.
-* Eine Datei mit der Endung `.components` enthält eine Sammlung an UI-Elementen. Sie kann beim Affentesten zum Black- und Whitelisting verwendet werden, und beim Prüfen der Testergebnisse zum [dauerhaften Ignorieren von Elementen](../review/ui-elemente-ignorieren.md).
+* Eine Datei mit der Endung `.ignore` enthält eine Sammlung an UI-Elementen und Attributen. Sie kann beim Affentesten zum Black- und Whitelisting verwendet werden, und beim Prüfen der Testergebnisse zum [dauerhaften Ignorieren von Elementen und/oder Attributen](../review/ui-elemente-ignorieren.md).
 
 Wo sich die jeweiligen Dateien befinden kann in der [Konfigurationsdatei](../konfiguration/konfigurationdatei.md) festgelegt werden.
 
