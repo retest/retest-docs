@@ -26,7 +26,7 @@ allen Tests angenommen, so wird die Suite grün markiert.
 
 Um die so bestätigten Unterschiede dauerhaft zu speichern und damit gleich die Suites zu pflegen, muss man nun noch auf
 "Änderungen anwenden" (8) klicken. Dabei gilt es Folgendes zu beachten: Derzeit werden akzeptierte Änderungen nur in den
-betroffenen ausführbaren Suites manifestiert. Nutzt man beispielsweise ein `result.replay` für diverse Änderungen,
+betroffenen ausführbaren Suites manifestiert. Nutzt man beispielsweise ein `replay.result` für diverse Änderungen,
 schließt dieses und öffnet es im Anschluss nochmal, so scheinen die zuvor getätigten Änderungen verschwunden. Die
 Änderungen sind zwar nicht sichtbar, jedoch aber vorhanden. Um ungültiges Bearbeiten hierbei zu verhindern, besitzen
 ausführbare Suites eine spezielle [UUID](https://de.wikipedia.org/wiki/Universally_Unique_Identifier), die sich beim
