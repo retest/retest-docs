@@ -1,3 +1,5 @@
+***Documentation moved to: https://github.com/retest/docs***
+
 # retest-docs
 
 This is the documentation of retest, which can be found at https://retest.de/docs/.
